@@ -1,0 +1,17 @@
+
+#navbarLinks{
+    padding: 10px;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+}
+#navbarBrand{
+    width: 130px;
+    height: 110px
+}
+#navbarBrand img{
+    width: 100%;
+    
+    object-fit: cover;
+}
