@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import rigoImageUrl from "../../img/rigo-baby.jpg";
+
 import "../../styles/home.css";
 
 export const Home = () => {
@@ -40,6 +40,52 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
+
+			<div class="card-group d-flex flex-wrap justify-content-space-around">
+				<div class="card" id="cardOrtognática">
+					<img src="..." class="card-img-top" alt="..."/>
+					<div class="card-body">
+						<h5 class="card-title">Cirurgia Ortognática</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+				<div class="card" id="remocaoSisos" >
+					<img src="..." class="card-img-top" alt="..."/>
+					<div class="card-body">
+						<h5 class="card-title">Remoção de Dentes Inclusos</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+				<div class="card" id="quistos">
+					<img src="..." class="card-img-top" alt="..."/>
+					<div class="card-body">
+						<h5 class="card-title">Remoção de Quistos</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+				</div>
+
+				<div class="card-group d-flex flex-wrap justify-content-space-around" id="secondCardRow">
+				<div class="card" id="oral">
+					<img src="..." class="card-img-top" alt="..."/>
+					<div class="card-body">
+						<h5 class="card-title">Cirurgia Oral</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+				<div class="card" id="reabilitacaoImplantes" >
+					<img src="..." class="card-img-top" alt="..."/>
+					<div class="card-body">
+						<h5 class="card-title">Cirurgia da Reabilitação sobre Implantes</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+					</div>
+				</div>
+				</div>
 			
 		</div>
 	);
