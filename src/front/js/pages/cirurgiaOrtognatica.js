@@ -1,6 +1,6 @@
 import React from "react";
 
-const cirurgiaOrtognatica = () => {
+const CirurgiaOrtognatica = () => {
     return (
         <div>
             <h1>cirurgiaOrtognatica</h1>
@@ -8,4 +8,4 @@ const cirurgiaOrtognatica = () => {
     );
 };
 
-export default cirurgiaOrtognatica;
+export default CirurgiaOrtognatica;

@@ -5,3 +5,57 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+.fullContent{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imageUnderNav{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-bottom: 75px;
+}
+.imageUnderNav img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.firstRow{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 800px;
+    border-color: blue;
+    border-style: groove;
+}
+.welcomeMsg{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: red;
+    border-style: groove;
+}
+.photoRamiro{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.photoRamiroImg{
+    width: 100%;
+    min-height: 700px;
+    border-color: red;
+    border-style: groove;
+}
+.photoRamiroImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}

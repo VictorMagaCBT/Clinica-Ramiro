@@ -10,7 +10,7 @@ export const Navbar = () => {
 
 	const navigate = useNavigate()
 	return (
-		<nav class="navbar navbar-expand-lg bg-light ">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid" id="navbarRow">
 				<a class="navbar-brand bg-dark" href="#" id="navbarBrand">
 					<img src="https://i.ibb.co/hYzgMfy/logo-Ramiro-Editado.jpg" alt="logo-Ramiro-Editado" border="0"/>
@@ -32,7 +32,13 @@ export const Navbar = () => {
 							<a class="nav-link" href="#">Equipa</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#" onClick={() => navigate("/sobreNos")}>Sobre Nós</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -1,4 +1,10 @@
 
+.navbar{
+    background-color: aquamarine;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 #navbarLinks{
     padding: 10px;
     overflow-y: visible;

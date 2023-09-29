@@ -1,0 +1,23 @@
+.contentAboutUs{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imageAboutUs{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    position: relative;
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+.imageAboutUs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
