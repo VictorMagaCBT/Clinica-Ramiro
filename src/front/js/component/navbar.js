@@ -1,10 +1,14 @@
 import React from "react";
 import {GiHamburgerMenu } from 'react-icons/gi';
+import { useNavigate } from "react-router-dom";
+import {cirurgiaOrtognatica} from "../pages/cirurgiaOrtognatica";
 import { Link } from "react-router-dom";
 
 import "../../styles/navbar.css";
 
 export const Navbar = () => {
+
+	const navigate = useNavigate()
 	return (
 		<nav class="navbar navbar-expand-lg bg-light ">
 			<div class="container-fluid" id="navbarRow">
@@ -19,16 +23,13 @@ export const Navbar = () => {
 				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navbarLinks">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Clinica</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Equipa</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Serviços</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Contacto</a>
@@ -38,7 +39,7 @@ export const Navbar = () => {
 								Serviços
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Serviço 1</a></li>
+								<li><a class="dropdown-item" href="#" onClick={() => navigate("ortognatica")}>Cirurgia Ortornatica</a></li>
 								<li><a class="dropdown-item" href="#">Serviço 2</a></li>
 								<li><a class="dropdown-item" href="#">Serviço 3</a></li>
 								<li><a class="dropdown-item" href="#">Serviço 4</a></li>
