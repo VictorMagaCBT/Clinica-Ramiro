@@ -50,7 +50,7 @@
 }
 .photoRamiroImg{
     width: 100%;
-    min-height: 700px;
+    min-height: 600px;
     /*border-color: red;
     border-style: groove;*/
 }
@@ -71,6 +71,15 @@
     /*border-color: red;
     border-style: groove;*/
 }
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    /*border-color: red;
+    border-style: groove;*/
+}
 .card{
     border: none;
     width: 450px;
@@ -80,6 +89,7 @@
     height: 100%;
     object-fit: cover;
     overflow:hidden;
+    
 }
 #oral, #reabilitacaoImplantes{
     max-width: 33%;
@@ -104,12 +114,14 @@
     border: none;
     border-radius: 20px;
     width: 30%;
-    background-color: rgb(110, 135, 151);
+    background-color: rgb(50, 50, 231);
     color: white;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    align-self: center;
 }
+
 .row-tourism{
     display: flex;
     flex-direction: row;

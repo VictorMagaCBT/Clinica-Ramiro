@@ -38,10 +38,10 @@ export const Navbar = () => {
 							<a class="nav-link" href="#" onClick={() => navigate("/turismo-da-saude")}>Turismo da Saúde</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
+							<a class="nav-link" href="#" onClick={() => navigate("/contactos")}>Contacto</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
+							<a class="nav-link" href="#" onClick={() => navigate("/blog")}>Blog</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

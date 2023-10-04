@@ -13,6 +13,7 @@ import RemocaoQuistos from "./pages/remocaoQuistos";
 import RemocaoSisos from "./pages/remocaoSisos";    
 import SobreNos from "./pages/sobreNos";
 import TurismoDaSaude from "./pages/turismoDaSaude";
+import Blog from "./pages/blog";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -40,6 +41,7 @@ const Layout = () => {
                         <Route element={<Oral />} path="/cirurgia-oral" />
                         <Route element={<Implantes />} path="/implantes" />
                         <Route element={<Contactos />} path="/contactos" />
+                        <Route element={<Blog />} path="/blog" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

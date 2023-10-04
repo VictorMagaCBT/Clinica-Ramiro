@@ -76,7 +76,7 @@ export const Home = () => {
 					<div class="card-body">
 						<h5 class="card-title">Cirurgia Oral</h5>
 						<p class="card-text">A cirurgia oral é um procedimento realizado na boca e regiões próximas, envolvendo intervenções cirúrgicas para tratar uma variedade de condições bucais. Essas intervenções podem abordar desde a remoção de dentes impactados, tratamento de lesões, até correção de problemas ósseos e teciduais.</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/remocao-quistos")}>Saiba mais...</button>
+						<button type="button" class="btn btn-primary" onClick={() => navigate ("/cirurgia-oral")}>Saiba mais...</button>
 					</div>
 				</div>
 				<div class="card" id="reabilitacaoImplantes" >
@@ -84,7 +84,7 @@ export const Home = () => {
 					<div class="card-body">
 						<h5 class="card-title">Cirurgia da Reabilitação sobre Implantes</h5>
 						<p class="card-text">A cirurgia de reabilitação com implantes é um procedimento odontológico avançado que visa restaurar a função e estética bucal por meio da colocação de implantes dentários. Os implantes são estruturas de titânio inseridas no osso da mandíbula ou maxila para substituir dentes ausentes ou danificados.</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/reabilitacao-implantes")}>Saiba mais...</button>
+						<button type="button" class="btn btn-primary" onClick={() => navigate ("/implantes")}>Saiba mais...</button>
 					</div>
 				</div>
 				</div>
@@ -93,10 +93,10 @@ export const Home = () => {
 				<img src="https://i.ibb.co/7kYbHMs/medical-tourism.jpg" alt="medical-tourism" border="0"/>
 				<div className="tourism-content">
 					<h1>TURISMO DA SAÚDE</h1>
-					<div className="tourismText text-center mt-3">
+					<div className="tourismTextHome text-center mt-3">
 						<p>Portugal é um destino crescente no turismo de saúde, especialmente na área odontológica. A reputação de profissionais qualificados, instalações modernas e custos acessíveis atrai pacientes internacionais em busca de tratamentos dentários de alta qualidade.</p>
 					</div>
-					<button type="button" class="btn btn-danger" onClick={() => navigate ("/remocao-sisos")}>Saiba mais...</button>
+					<button type="button" class="btn btn-danger" onClick={() => navigate ("/turismo-da-saude")}>Saiba mais...</button>
 				</div>
 			</div>
 			
