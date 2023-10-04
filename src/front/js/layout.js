@@ -4,10 +4,15 @@ import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
-import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 import CirurgiaOrtognatica from "./pages/cirurgiaOrtognatica";
+import Contactos from "./pages/contacto";
+import Oral from "./pages/oral";
+import Implantes from "./pages/reabilitaçãoSobreImplantes";
+import RemocaoQuistos from "./pages/remocaoQuistos";
+import RemocaoSisos from "./pages/remocaoSisos";    
 import SobreNos from "./pages/sobreNos";
+import TurismoDaSaude from "./pages/turismoDaSaude";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -29,7 +34,12 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         <Route element={<CirurgiaOrtognatica />} path="/ortognatica" />
                         <Route element={<SobreNos />} path="/sobreNos" />
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<TurismoDaSaude />} path="/turismo-da-saude" />
+                        <Route element={<RemocaoSisos />} path="/remocao-sisos" />
+                        <Route element={<RemocaoQuistos />} path="/remocao-quistos" />
+                        <Route element={<Oral />} path="/cirurgia-oral" />
+                        <Route element={<Implantes />} path="/implantes" />
+                        <Route element={<Contactos />} path="/contactos" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

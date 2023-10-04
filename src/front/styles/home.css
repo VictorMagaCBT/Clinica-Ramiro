@@ -8,6 +8,7 @@
 .fullContent{
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 5%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,8 +30,8 @@
     flex-flow: column wrap;
     justify-content: space-around;
     height: 800px;
-    border-color: blue;
-    border-style: groove;
+   /* border-color: blue;
+    border-style: groove;*/
 }
 .welcomeMsg{
     width: 45%;
@@ -38,8 +39,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-color: red;
-    border-style: groove;
+    /*border-color: red;
+    border-style: groove;*/
 }
 .photoRamiro{
     width: 55%;
@@ -50,8 +51,8 @@
 .photoRamiroImg{
     width: 100%;
     min-height: 700px;
-    border-color: red;
-    border-style: groove;
+    /*border-color: red;
+    border-style: groove;*/
 }
 .photoRamiroImg img{
     width: 100%;
@@ -66,17 +67,73 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 600px;
+    /*border-color: red;
+    border-style: groove;*/
 }
 .card{
     border: none;
-    border-radius: 20px;
-    background-color: rgb(165, 163, 163);
+    width: 450px;
+    /*background-color: rgb(165, 163, 163);*/
     margin: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
 }
 #oral, #reabilitacaoImplantes{
     max-width: 33%;
     display: flex;
+    margin: 30px;
+    border-radius: 20px;
+  
+}
+#cardOrtognatica, #remocaoSisos, #quistos{
+    max-width: 33%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 20px;
+}
+#cardOrtognatica img, #remocaoSisos img, #quistos img, #oral img, #reabilitacaoImplantes img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow:hidden;
+}
+.btn{
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    background-color: rgb(110, 135, 151);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.row-tourism{
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 600px;
+    /*border-color: red;
+    border-style: groove;*/
+}
+.row-tourism img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.tourism-content{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+    /*border-color: red;
+    border-style: groove;*/
+
 }

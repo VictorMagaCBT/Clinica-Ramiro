@@ -35,6 +35,9 @@ export const Navbar = () => {
 							<a class="nav-link" href="#" onClick={() => navigate("/sobreNos")}>Sobre Nós</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#" onClick={() => navigate("/turismo-da-saude")}>Turismo da Saúde</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#">Contacto</a>
 						</li>
 						<li class="nav-item">
@@ -45,10 +48,11 @@ export const Navbar = () => {
 								Serviços
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#" onClick={() => navigate("ortognatica")}>Cirurgia Ortornatica</a></li>
-								<li><a class="dropdown-item" href="#">Serviço 2</a></li>
-								<li><a class="dropdown-item" href="#">Serviço 3</a></li>
-								<li><a class="dropdown-item" href="#">Serviço 4</a></li>
+								<li><a class="dropdown-item" href="#" onClick={() => navigate("/ortognatica")}>Cirurgia Ortornatica</a></li>
+								<li><a class="dropdown-item" href="#" onClick={() => navigate("/remocao-sisos")}>Remoção de Dentes Inclusos</a></li>
+								<li><a class="dropdown-item" href="#" onClick={() => navigate("/remocao-quistos")}>Remoção de Quistos</a></li>
+								<li><a class="dropdown-item" href="#" onClick={() => navigate("/cirurgia-oral")}>Cirurgia Oral</a></li>
+								<li><a class="dropdown-item" href="#" onClick={() => navigate("/implantes")}>Cirurgia da Reabilitação Sobre Implantes</a></li>
 							</ul>
 						</li>
 					</ul>
