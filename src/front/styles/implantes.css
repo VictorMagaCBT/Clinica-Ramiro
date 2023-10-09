@@ -1,0 +1,101 @@
+.content-implantes{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+.introduction{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    margin-top: 50px;
+}
+.introduction-text{
+    width: 100%;
+    margin-left: 25px;
+}
+.introducao-image, .dentadura-part{
+    width: 100%;
+    max-height: 450px;
+    border-color: red;
+    border-style: groove;
+    left: 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+.introducao-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.dentadura-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.dentadura-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    width: 100%;
+    max-height: 450px;
+    margin-bottom: 50px;
+    border-color: red;
+    border-style: groove;
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    max-height: 38vh;
+    width: 100%; 
+}
+.exemplo-first-image, .exemplo-second-image{
+    width: 50%;
+    height: 100%;
+    border-color: red;
+    border-style: groove;
+    display: flex;
+    margin-bottom: 50px;
+    margin:5%;  
+}
+.exemplo-first-image img, .exemplo-second-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.final-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    background-color: rgb(207, 205, 205);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+.moreInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn-more-info{
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 30%;
+    background-color: rgb(50, 50, 231);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}

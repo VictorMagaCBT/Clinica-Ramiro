@@ -1,0 +1,77 @@
+.content-Quistos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.introductionQuistos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5vw;
+    margin-top: 50px;
+}
+.introducao-image-Quistos{
+    width: 50%;
+    max-height: 400px;
+    left: 0;
+    margin-left: 25px;
+    display: flex;
+    margin-bottom: 35px;
+}
+.quistos-text, .introduction-text-Quistos{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vw;
+}
+.introducao-image-Quistos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.photosQuistos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    max-height: 33vh;
+    width: 100%; 
+    margin-bottom: 50px;
+}
+.firstPhoto-image, .secondPhoto-image, .thirdPhoto-image{
+    width: 25%;
+    max-height: 100%;
+    display: flex;
+}
+.firstPhoto-image img, .secondPhoto-image img, .thirdPhoto-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.bottom-quisto-text{
+    background-color: rgb(207, 205, 205);
+    font-size: 1.5vw;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+.btn-more-info{
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 30%;
+    background-color: rgb(50, 50, 231);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}

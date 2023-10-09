@@ -1,0 +1,83 @@
+.content-ortgnatica{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+.introduction{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    margin-top: 50px;
+}
+.introduction-text{
+    width: 100%;
+    margin-left: 25px;
+}
+.introducao-image, .esqueleto-part{
+    width: 100%;
+    max-height: 450px;
+    border-color: red;
+    border-style: groove;
+    left: 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+.introducao-image img, .esqueleto-text img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.esqueleto-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    max-height: 38vh;
+    width: 100%; 
+}
+.exemplo-image1, .exemplo-image2, .exemplo-image3{
+    width: 25%;
+    height: 100%;
+    border-color: red;
+    border-style: groove;
+    display: flex;
+    margin-bottom: 50px;
+}
+.exemplo-image1 img, .exemplo-image2 img, .exemplo-image3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+.final-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    margin-top: 50px;
+}
+.moreInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn-more-info{
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 30%;
+    background-color: rgb(50, 50, 231);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
