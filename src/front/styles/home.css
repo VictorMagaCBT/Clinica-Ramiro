@@ -50,7 +50,8 @@
 }
 .photoRamiroImg{
     width: 100%;
-    min-height: 600px;
+    max-height: 650px;
+    
     /*border-color: red;
     border-style: groove;*/
 }

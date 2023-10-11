@@ -38,7 +38,7 @@ export const Home = () => {
 					<h1>Dr Ramiro Silva</h1>
 					<h3>Cirurgia e Traumatologia Buco Máxilo Facial</h3>
 					<div className="photoRamiroImg">
-						<img src="https://i.ibb.co/RgW6Qnk/foto-ramiro-cortada.jpg" alt="foto-ramiro-cortada" border="0"/>
+						<img src="https://i.ibb.co/SyJn2XT/foto-ramiro-cortada.jpg" alt="foto-ramiro-cortada" border="0"/>
 					</div>
 				</div>
 			</div>
