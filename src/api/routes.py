@@ -3,7 +3,9 @@ This module takes care of starting the API Server, Loading the DB and Adding the
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
 from api.models import db, User
+from sqlalchemy import not_ 
 from api.utils import generate_sitemap, APIException
+from api.data import populate_user
 
 api = Blueprint('api', __name__)
 
@@ -11,6 +13,7 @@ api = Blueprint('api', __name__)
 @api.route('/hello', methods=['POST', 'GET'])
 def handle_hello():
 
+    populate_user();
     response_body = {
         "message": "Hello! I'm a message that came from the backend, check the network tab on the google inspector and you will see the GET request"
     }
@@ -30,7 +33,7 @@ def create_user():
    
    elif "name" not in data:
         response_body = {
-           "msg": "Email doesnt exist in the request"
+           "msg": "Name doesnt exist in the request"
        }
         return jsonify(response_body),400
    
