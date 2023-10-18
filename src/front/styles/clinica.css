@@ -1,0 +1,68 @@
+.imageClinica {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(221, 234, 238);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.nameClinica{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.imageClinica img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.introductionClinica{
+    width: 80%;
+    height: 80%;
+    font-size: 3.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#firstCard, #secondCard, #thirdCard, #fourthCard, #fifthCard{
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#firstRowClinic, #secondRowClinic{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: 100px;
+}  

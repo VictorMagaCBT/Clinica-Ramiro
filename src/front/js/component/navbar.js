@@ -26,22 +26,13 @@ export const Navbar = () => {
 							<a class="nav-link active" aria-current="page" href="/">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Clinica</a>
+							<a class="nav-link" href="#" onClick={() => navigate("/clinica")}>Clinica</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Equipa</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#" onClick={() => navigate("/sobreNos")}>Sobre Nós</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#" onClick={() => navigate("/turismo-da-saude")}>Turismo da Saúde</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#" onClick={() => navigate("/contactos")}>Contacto</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#" onClick={() => navigate("/blog")}>Blog</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,6 +45,15 @@ export const Navbar = () => {
 								<li><a class="dropdown-item" href="#" onClick={() => navigate("/cirurgia-oral")}>Cirurgia Oral</a></li>
 								<li><a class="dropdown-item" href="#" onClick={() => navigate("/implantes")}>Cirurgia da Reabilitação Sobre Implantes</a></li>
 							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" onClick={() => navigate("/turismo-da-saude")}>Turismo da Saúde</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" onClick={() => navigate("/contactos")}>Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" onClick={() => navigate("/blog")}>Blog</a>
 						</li>
 					</ul>
 				</div>

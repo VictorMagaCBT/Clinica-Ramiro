@@ -12,6 +12,7 @@ import Implantes from "./pages/reabilitaçãoSobreImplantes";
 import RemocaoQuistos from "./pages/remocaoQuistos";
 import RemocaoSisos from "./pages/remocaoSisos";    
 import SobreNos from "./pages/sobreNos";
+import Clinica from "./pages/clinica";
 import TurismoDaSaude from "./pages/turismoDaSaude";
 import Blog from "./pages/blog";
 
@@ -35,6 +36,7 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         <Route element={<CirurgiaOrtognatica />} path="/ortognatica" />
                         <Route element={<SobreNos />} path="/sobreNos" />
+                        <Route element={<Clinica />} path="/clinica" />
                         <Route element={<TurismoDaSaude />} path="/turismo-da-saude" />
                         <Route element={<RemocaoSisos />} path="/remocao-sisos" />
                         <Route element={<RemocaoQuistos />} path="/remocao-quistos" />
