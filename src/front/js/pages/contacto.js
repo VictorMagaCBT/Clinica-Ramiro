@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 
 import "../../styles/contactos.css";
@@ -7,8 +8,10 @@ const Contactos = () => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [country, setCountry] = useState('');
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = () => {
         create_user();
@@ -23,6 +26,8 @@ const Contactos = () => {
             alert('Email is empty!')
         } else if ( object === " "){
             alert("Object is empty")
+        } else if(country === ''){
+            alert('Country is empty!')
         } else if ( message === " "){
             alert("Message is empty")
         }
@@ -68,6 +73,20 @@ const Contactos = () => {
                             required=""
                             value={name}
                             onChange={(e)=>{setName(e.target.value)}}
+                            />
+                            <label for="name"><i class="fa-regular fa-user"></i> </label>
+                        </span>
+                        <span>
+                            <input 
+                            type="text" 
+                            class="input-slide" 
+                            id="country" 
+                            name="country" 
+                            placeholder="Pais" 
+                            autocomplete="off" 
+                            required=""
+                            value={country}
+                            onChange={(e)=>{setCountry(e.target.value)}}
                             />
                             <label for="name"><i class="fa-regular fa-user"></i> </label>
                         </span>

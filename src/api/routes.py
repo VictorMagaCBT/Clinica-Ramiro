@@ -37,6 +37,12 @@ def create_user():
        }
         return jsonify(response_body),400
    
+   elif "country" not in data:
+        response_body = {
+           "msg": "Country doesnt exist in the request"
+       }
+        return jsonify(response_body),400
+   
    elif "email" not in data:
         response_body = {
            "msg": "Email doesnt exist in the request"
@@ -55,7 +61,7 @@ def create_user():
        }
         return jsonify(response_body),400
    
-   new_user= User(name = data["name"], email = data["email"], object= data["object"], message=data["message"])
+   new_user= User(name = data["name"], email = data["email"], phone_number=data["phone number"], country= data["country"], object= data["object"], message=data["message"], date=data["date"])
    db.session.add(new_user)   
    db.session.commit()
 
