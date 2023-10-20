@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../../styles/footer.css";
 
 export const Footer = () => (
@@ -8,3 +8,5 @@ export const Footer = () => (
 		</p>
 	</footer>
 );
+
+
