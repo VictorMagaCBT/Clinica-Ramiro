@@ -9,6 +9,8 @@ const Contactos = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [country, setCountry] = useState('');
+    const [phone_number, setPhone_number] = useState('');
+    const [date, setDate] = useState('');
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
     const navigate = useNavigate();
@@ -59,87 +61,121 @@ const Contactos = () => {
                 <div class="formulario">
                     
                     <div class="title-form">
-                    <h1><i class="fa-regular fa-comments"></i> Fale Conosco Agora</h1>
+                    <h1><i class="fa-regular fa-comments"></i>  Fale Conosco Agora</h1>
                     </div>
-                    <form action="#" method="post">
-                        <span>
-                            <input 
-                            type="text" 
-                            class="input-slide" 
-                            id="name" 
-                            name="name" 
-                            placeholder="Nome" 
-                            autocomplete="off" 
-                            required=""
-                            value={name}
-                            onChange={(e)=>{setName(e.target.value)}}
-                            />
-                            <label for="name"><i class="fa-regular fa-user"></i> </label>
-                        </span>
-                        <span>
-                            <input 
-                            type="text" 
-                            class="input-slide" 
-                            id="country" 
-                            name="country" 
-                            placeholder="Pais" 
-                            autocomplete="off" 
-                            required=""
-                            value={country}
-                            onChange={(e)=>{setCountry(e.target.value)}}
-                            />
-                            <label for="name"><i class="fa-regular fa-user"></i> </label>
-                        </span>
-                        <span>
-                            <input 
-                            type="text" 
-                            class="input-slide" 
-                            id="email" 
-                            name="email" 
-                            placeholder="E-mail" 
-                            autocomplete="off" 
-                            required=""
-                            value={email}
-                            onChange={(e)=>{setEmail(e.target.value)}}
-                            />
-                            <label for="email"> <i class="fa-regular fa-envelope"></i> </label>
-                        </span>
-                        <span>
-                            <input 
-                            type="text" 
-                            class="input-slide" 
-                            id="object" 
-                            name="object" 
-                            placeholder="Assunto" 
-                            autocomplete="off" 
-                            required=""
-                            value={object}
-                            onChange={(e)=>{setObject(e.target.value)}}
-                            />
-                            <label for="object"><i class="fa-solid fa-question"></i> </label>
-                        </span>
-                        <span>
-                            <textarea 
-                                type="text" 
-                                class="textarea-slide" 
-                                id="message" 
-                                name="message" 
-                                rows="3" 
-                                placeholder="Mensagem" 
-                                autocomplete="off" 
-                                required=""
-                                value={message}
-                                onChange={(e)=>{setMessage(e.target.value)}}
-                                />
-                            <label for="mensagem"><i class="fa-regular fa-comment-dots"></i> </label>
-                        </span>
+                    <form action="#" method="post" id="complete-form">
+                        <div class="row-form">
+                            <div class="left-part">
+                                <span>
+                                    <input 
+                                    type="text" 
+                                    class="input-slide" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="Nome" 
+                                    autocomplete="off" 
+                                    required=""
+                                    value={name}
+                                    onChange={(e)=>{setName(e.target.value)}}
+                                    />
+                                    <label for="name"><i class="fa-regular fa-user"></i> </label>
+                                </span>
+                                <span>
+                                    <input 
+                                    type="text" 
+                                    class="input-slide" 
+                                    id="country" 
+                                    name="country" 
+                                    placeholder="Pais" 
+                                    autocomplete="off" 
+                                    required=""
+                                    value={country}
+                                    onChange={(e)=>{setCountry(e.target.value)}}
+                                    />
+                                    <label for="country"><i class="fa-solid fa-earth-europe"></i></label>
+                                </span>
+                                <span>
+                                    <input 
+                                    type="text" 
+                                    class="input-slide" 
+                                    id="phone_number" 
+                                    name="phone_number"  
+                                    placeholder="Contacto" 
+                                    autocomplete="off" 
+                                    required=""
+                                    value={phone_number}
+                                    onChange={(e)=>{setPhone_number(e.target.value)}}
+                                    />
+                                    <label for="phone_number"><i class="fa-solid fa-mobile-screen"></i></label>
+                                </span>
+                                <span>
+                                    <input 
+                                    type="text" 
+                                    class="input-slide" 
+                                    id="date" 
+                                    name="date"  
+                                    placeholder="Data" 
+                                    autocomplete="off" 
+                                    required=""
+                                    value={date}
+                                    onChange={(e)=>{setDate(e.target.value)}}
+                                    />
+                                    <label for="date"><i class="fa-regular fa-calendar"></i></label>
+                                </span>
+                            </div>
+                            <div class="right-part">
+                                <span>
+                                    <input 
+                                    type="text" 
+                                    class="input-slide" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="E-mail" 
+                                    autocomplete="off" 
+                                    required=""
+                                    value={email}
+                                    onChange={(e)=>{setEmail(e.target.value)}}
+                                    />
+                                    <label for="email"> <i class="fa-regular fa-envelope"></i> </label>
+                                </span>
+                                <span>
+                                    <input 
+                                    type="text" 
+                                    class="input-slide" 
+                                    id="object" 
+                                    name="object" 
+                                    placeholder="Assunto" 
+                                    autocomplete="off" 
+                                    required=""
+                                    value={object}
+                                    onChange={(e)=>{setObject(e.target.value)}}
+                                    />
+                                    <label for="object"><i class="fa-solid fa-question"></i> </label>
+                                </span>
+                                <span>
+                                    <textarea 
+                                        type="text" 
+                                        class="textarea-slide" 
+                                        id="message" 
+                                        name="message" 
+                                        rows="3" 
+                                        placeholder="Mensagem" 
+                                        autocomplete="off" 
+                                        required=""
+                                        value={message}
+                                        onChange={(e)=>{setMessage(e.target.value)}}
+                                        />
+                                    <label for="mensagem"><i class="fa-regular fa-comment-dots"></i> </label>
+                                </span>
+                            </div>
+                        </div>
                         <div class="box-btn">
                             <button 
                                 type="submit" 
                                 class="btn-envia zoom-shadow"
                                 onClick={handleSubmit}
                                 >
-                                <i class="fa-regular fa-paper-plane mr-5">Enviar</i>
+                                <i class="fa-regular fa-paper-plane"> Enviar</i>
                             </button>
                         </div>
                     </form>
