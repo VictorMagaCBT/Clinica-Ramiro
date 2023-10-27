@@ -11,7 +11,7 @@ export const Home = () => {
 	return (
 		<div className="fullContent">
 			<div className="imageUnderNav">
-				<img src="https://i.ibb.co/xLtycbS/Imagem-23-alterada.jpg" alt="Imagem-23-alterada" border="0"/>
+				<img src="https://i.ibb.co/sJR8j2v/Imagem-23-mejorada-min.jpg" alt="Imagem-23-mejorada-min" border="0"/>
 			</div>
 
 			<div className="firstRow">
@@ -45,7 +45,7 @@ export const Home = () => {
 
 			<div class="card-group d-flex flex-wrap justify-content-space-around">
 				<div class="card" id="cardOrtognatica">
-					<img src="https://i.ibb.co/X8mLH68/Imagem-9-recortada2.jpg" alt="Imagem-9-recortada2" border="0"/>
+				<img src="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" alt="Imagem-9-sem-Identidade-min" border="0"/>
 					<div class="card-body">
 						<h5 class="card-title">Cirurgia Ortognática</h5>
 						<p class="card-text">A cirurgia ortognática é um procedimento cirúrgico utilizado para corrigir problemas relacionados à posição e alinhamento dos ossos da face e mandíbula. Essa cirurgia é realizada por um cirurgião maxilofacial e tem como objetivo melhorar tanto a estética quanto a funcionalidade da face.</p>

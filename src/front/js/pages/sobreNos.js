@@ -48,7 +48,7 @@ const SobreNos = () => {
                     </div>
                 </div>
         </div>
-          <h3 className="titleCommitment">Nosso Compromisso</h3>
+          <h3 className="titleCommitment mt-3">Nosso Compromisso</h3>
         <div className="commitment">
           <p>
             Estamos empenhados em proporcionar a cada paciente uma jornada de
@@ -64,8 +64,8 @@ const SobreNos = () => {
         </div>
         <div className="imageAboutUs">
           <img
-            src="https://i.ibb.co/W3L1XfZ/Imagem-24-recortada.jpg"
-            alt="Imagem-24-recortada"
+            src="https://i.ibb.co/Vq0THhk/Imagem-24-recortada-HD-min.jpg" 
+            alt="Imagem-24-recortada-HD-min" 
             border="0"
           />
         </div>

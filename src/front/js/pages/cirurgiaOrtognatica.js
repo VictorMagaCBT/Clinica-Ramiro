@@ -11,38 +11,51 @@ const CirurgiaOrtognatica = () => {
     const navigate = useNavigate();
     
     return (
-        <div className="content-ortgnatica">
+        <div className="content-ortognatica">
             <h1 className="cirurgiaOrtognática mt-5 text-center">Cirurgia Ortognatica</h1>
             <div className="introduction">
-                <div className="introducao-image">
+                <div className="introducao-image-ortognatica">
                     <img src="https://i.ibb.co/4ZwPkJN/sorriso-feliz.jpg" alt="sorriso-feliz" border="0"/>
                 </div>
-                <p className="introduction-text">Você já imaginou um sorriso que não apenas ilumina o rosto, mas também transforma a forma como você se sente? Bem-vindo ao mundo da cirurgia ortognática, um incrível campo da odontologia e cirurgia que vai além do simples aprimoramento estético. É uma jornada de transformação que não apenas melhora a sua aparência, mas também restaura sua confiança e qualidade de vida.</p>
+                <p className="introduction-text">
+                    Você já imaginou um sorriso que não apenas ilumina o rosto, mas também transforma a forma como você se sente? 
+                    Bem-vindo ao mundo da cirurgia ortognática, um incrível campo da odontologia e cirurgia que vai além do simples aprimoramento estético.
+                    É uma jornada de transformação que não apenas melhora a sua aparência, mas também restaura sua confiança e qualidade de vida.
+                </p>
             </div>
             <div className="esqueleto-part">
-                <p className="cirurgia-text">Imagine poder corrigir aquele desalinhamento facial que sempre o incomodou - seja uma mandíbula que parece fora de lugar, um maxilar desalinhado ou uma mordida que não se encaixa como deveria. A cirurgia ortognática é a chave para resolver esses problemas, proporcionando um rosto mais harmonioso e uma oclusão dentária perfeita.
-
-                Essa cirurgia entra em cena quando a ortodontia sozinha não é suficiente para corrigir irregularidades faciais significativas. Em situações onde o alinhamento dos dentes não é o único problema, a cirurgia ortognática oferece uma solução completa. Se você sofre com dificuldades para mastigar, falar ou até mesmo respirar devido à sua estrutura facial desalinhada, este procedimento pode ser a resposta para os seus problemas.
-                </p>
+                <div className="cirurgia-text">
+                    <p>
+                        Imagine poder corrigir aquele desalinhamento facial que sempre o incomodou - seja uma mandíbula que parece fora de lugar, 
+                        um maxilar desalinhado ou uma mordida que não se encaixa como deveria. A cirurgia ortognática é a chave para resolver 
+                        esses problemas, proporcionando um rosto mais harmonioso e uma oclusão dentária perfeita.
+                    </p>
+                    <p>
+                        Essa cirurgia entra em cena quando a ortodontia sozinha não é suficiente para corrigir irregularidades faciais significativas.
+                        Em situações onde o alinhamento dos dentes não é o único problema, a cirurgia ortognática oferece uma solução completa. 
+                        Se você sofre com dificuldades para mastigar, falar ou até mesmo respirar devido à sua estrutura facial desalinhada, 
+                        este procedimento pode ser a resposta para os seus problemas.
+                    </p>
+                </div>
                 <div className="esqueleto-image">
                     <img src="https://i.ibb.co/BBC0Md8/exemplo-esqueleto.webp" alt="exemplo-esqueleto" border="0"/>
                 </div>
             </div>
             <div className="photos">
                 <div className="exemplo-image1">
-                    <a href="https://i.ibb.co/PzhBQ9X/Imagem-9-recortada2.jpg" target="_blank">
-                        <img src="https://i.ibb.co/PzhBQ9X/Imagem-9-recortada2.jpg" alt="Imagem-9-recortada2" border="0" />
+                    <a href="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" target="_blank">
+                        <img src="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" alt="Imagem-9-sem-Identidade-min" border="0"/>
                     </a>
                 </div>
                 <div className="exemplo-image2">
-                    <a href="https://i.ibb.co/VpYRycz/Imagem-7-recortada.jpg" target="_blank">
-                        <img src="https://i.ibb.co/VpYRycz/Imagem-7-recortada.jpg" alt="Imagem-7-recortada" border="0" />
+                    <a href="https://i.ibb.co/C0MVHjM/Imagem-7-Incognita-min.jpg" target="_blank">
+                        <img src="https://i.ibb.co/C0MVHjM/Imagem-7-Incognita-min.jpg" alt="Imagem-7-Incognita-min" border="0"/>
                     </a>
                    
                 </div>
                 <div className="exemplo-image3">
-                    <a href="https://i.ibb.co/Tc1FzC1/Imagem-11-recortada.jpg" target="_blank">
-                        <img src="https://i.ibb.co/Tc1FzC1/Imagem-11-recortada.jpg" alt="Imagem-11-recortada" border="0" />
+                    <a href="https://i.ibb.co/K7PJTH0/Imagem-11-Inc-gnita-min.jpg" target="_blank">
+                    <img src="https://i.ibb.co/K7PJTH0/Imagem-11-Inc-gnita-min.jpg" alt="Imagem-11-Inc-gnita-min" border="0"/>
                     </a>
                 </div>
             </div>
