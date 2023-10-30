@@ -61,6 +61,37 @@
     object-fit: cover;
     overflow:hidden;
 }
+.divider{
+    width: 100%;
+    height: 45vh;
+    background-image: url(https://i.ibb.co/cJkfnkz/separador-home.jpg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dividerText{
+    background-color: white;
+    color: black;
+    font-size: 5.2vw; 
+    font-weight: bold;
+    margin: 0 auto; 
+    padding: 10px;
+    width: 50%;
+    text-align: center; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen; 
+}
+
 .card-group{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -114,7 +145,7 @@
 .btn{
     border: none;
     border-radius: 20px;
-    width: 30%;
+    width: 50%;
     background-color: rgb(50, 50, 231);
     color: white;
     font-size: 20px;

@@ -12,7 +12,7 @@ export const Navbar = () => {
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid" id="navbarRow">
 				<a class="navbar-brand bg-dark" href="#" id="navbarBrand">
-					<img src="https://i.ibb.co/hYzgMfy/logo-Ramiro-Editado.jpg" alt="logo-Ramiro-Editado" border="0"/>
+					<img src="https://i.ibb.co/P5V4vgx/logo-Ramiro-sem-fundo.png" alt="logo-Ramiro-sem-fundo" border="0"/>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
