@@ -3,6 +3,7 @@
     /*background-color: aquamarine;*/
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 5px;
 }
 
 #navbarLinks{
@@ -14,10 +15,11 @@
 }
 #navbarBrand{
     width: 130px;
-    height: 110px
+    height: 110px;
 }
 #navbarBrand img{
     width: 100%;
-    
+    background-color: white;
     object-fit: cover;
+    top: 0;
 }

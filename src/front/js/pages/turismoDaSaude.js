@@ -3,7 +3,7 @@ import "../../styles/turismoDaSaude.css";
 
 const TurismoDaSaude = () => {
     return (
-        <div className="fullContent-tourism">
+        <div className="fullContentTourism">
 			<div className="row-tourism">
 				<div className="turismo-da-saude">TURISMO DA SAÚDE</div>
 			</div>
@@ -46,8 +46,10 @@ const TurismoDaSaude = () => {
 				</div>
 			</div>
 			<div className="photoTextFinal">
-				Estamos aqui para fazer parte da sua jornada em direção a um sorriso saudável e radiante, em um dos 
-				destinos mais encantadores para turismo de saúde.
+				<p>
+					Estamos aqui para fazer parte da sua jornada em direção a um sorriso saudável e radiante, em um dos 
+					destinos mais encantadores para turismo de saúde.
+				</p>
 			</div>
 		</div>	
     );

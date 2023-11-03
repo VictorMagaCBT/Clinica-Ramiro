@@ -31,7 +31,7 @@
     /*border-color: red;
     border-style: groove;*/
 }
-.fullContent-tourism{
+.fullContentTourism{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -69,12 +69,16 @@
     font-size: 5vh;
     font-weight: bold;
     color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     margin-top: 10%;
     margin-bottom: 10%;
-    padding-top: 15px;
+    padding-top: auto;
+    padding-bottom: auto;
     width: 90%;
-    height: 20vh;
+    height: 35vh;
     background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
     background-size: cover;
     background-position: center;
