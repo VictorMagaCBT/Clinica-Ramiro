@@ -53,7 +53,7 @@ export const Home = () => {
 			</div>
 			
 		
-			<div class="card-group d-flex flex-wrap justify-content-space-around">
+			<div class="card-group d-flex flex-wrap justify-content-around">
 				<div class="card" id="cardOrtognatica">
 					<img src="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" alt="Imagem-9-sem-Identidade-min" border="0"/>
 					<div class="card-body">
@@ -80,7 +80,7 @@ export const Home = () => {
 				</div>
 				</div>
 
-				<div class="card-group d-flex flex-wrap justify-content-space-around" id="secondCardRow">
+				<div class="card-group d-flex flex-wrap justify-content-around" id="secondCardRow">
 				<div class="card" id="oral">
 					<img src="https://i.ibb.co/smjCq5h/Imagem-21.jpg" alt="Imagem-21" border="0"/>
 					<div class="card-body">

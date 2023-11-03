@@ -23,3 +23,44 @@
     object-fit: cover;
     top: 0;
 }
+
+@media (max-width: 800px){
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5px;
+    }
+    #navbarLinks{
+        padding: 10px;
+        margin-top: 20px;
+        overflow-y: visible;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+    }
+    .dropdown-menu{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .dropdown-menu:hover{
+        background-color: #080707;
+        border-color: white;
+        color:white;
+    }
+    #navbarBrand{
+        width: 22vh;
+        height: 18vh;
+    }
+    #navbarBrand img{
+        width: 100%;
+        background-color: white;
+        object-fit: cover;
+        top: 0;
+    }
+}
