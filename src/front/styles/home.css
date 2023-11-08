@@ -70,9 +70,9 @@
 
 }
 .dividerText{
-    background-color: rgb(247, 246, 243);
+    background-color: white;
     color: black;
-    font-size: 5.2vw; 
+    font-size: 5.2vw;
     font-weight: bold;
     margin: 0 auto; 
     padding: 10px;
@@ -192,7 +192,7 @@
         align-items: center;
     }
     .dividerText{
-        background-color: rgb(247, 246, 243);
+        background-color: rgb(26, 25, 24);
         color: black;
         font-size: 5.2vw; 
         font-weight: bold;

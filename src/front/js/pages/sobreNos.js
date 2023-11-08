@@ -13,12 +13,19 @@ const SobreNos = () => {
           </h5>
         </div>  
           <h3 className="titleValues">Os Nossos Valores</h3>
+        <div className="valuesImage">
+          <img
+            src="https://i.ibb.co/vZdWvQP/dentista-teclado-min.jpg" 
+            alt="dentista-teclado-min" 
+            border="0"
+          />
+        </div>
         <div className="values">
                 <div className="object">
                     <strong>Excelência</strong>
                     <div className="infoText">
                     Buscamos a excelência em cada procedimento, adotando as últimas
-                    inovações e técnicas para garantir o melhor para nossos pacientes.
+                    inovações e técnicas para garantir o melhor para os nossos pacientes.
                     </div>
                 </div>
         
@@ -69,7 +76,7 @@ const SobreNos = () => {
             border="0"
           />
         </div>
-        </div>
+      </div>
     );
   };
   
