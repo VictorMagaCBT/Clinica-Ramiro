@@ -27,9 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;  
-  
-    /*border-color: red;
-    border-style: groove;*/
 }
 .fullContentTourism{
     display: flex;
@@ -40,22 +37,27 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.firstRow, .secondRow, .thirdRow{
+.firstRow, .secondRow, .thirdRow, .fourthRow{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 100%;
-    height: 30vh;
-    /*border-color: red;
-    border-style: groove;*/
 }
 .firstRow img, .secondRow img, .thirdRow img{
     width: 80%;
     height: 80%;
     margin-left:25px;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow:hidden;
+}
+.fourthRow img{
+    width: 100%;
+    height: 450px;
     border-radius: 20px;
     object-fit: cover;
     overflow:hidden;
@@ -83,4 +85,49 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 800px){
+    .turismo-da-saude{
+        font-size: 8vw;
+        width: 80%;
+    }
+    .row-tourism{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .photoText{
+        font-size: 4.5vw;
+    }
+    .photoTextFinal{
+        font-size: 6vw;
+        height: 50vh;
+    }
+    .col-6{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .col-6 img, .col img{
+        width: 100%;
+        object-fit: cover;
+        overflow:hidden;
+        margin-bottom: 20px;
+        margin-left:0 !important;
+    }
+    .firstRow, .secondRow, .thirdRow, .fourthRow{
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+   
+    .fullContentTourism{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
 }

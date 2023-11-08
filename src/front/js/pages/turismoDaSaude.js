@@ -3,12 +3,12 @@ import "../../styles/turismoDaSaude.css";
 
 const TurismoDaSaude = () => {
     return (
-        <div className="fullContentTourism">
+        <div className="fullContentTourism d-flex flex-wrap justify-content-center">
 			<div className="row-tourism">
 				<div className="turismo-da-saude">TURISMO DA SAÚDE</div>
 			</div>
-			<div class="row firstRow">
-				<div class="col-6">
+			<div class="row firstRow d-flex flex-wrap justify-content-center">
+				<div class="col-6 d-flex flex-wrap">
 					<p className="photoText">
 						Portugal tem emergido como um dos destinos proeminentes no cenário global do turismo de saúde, 
 						com sua indústria odontológica ganhando destaque.
@@ -23,7 +23,7 @@ const TurismoDaSaude = () => {
 					<img src="https://i.ibb.co/d5ZT7Wr/bolsa-de-primeiros-socorros-min.jpg" alt="bolsa-de-primeiros-socorros-min" border="0"/>
 				</div>
 			</div>
-			<div class="row secondRow">
+			<div class="row secondRow d-flex flex-wrap justify-content-center">
 				<div class="col-6">
 					<img src="https://i.ibb.co/5YyGdh0/safe-money.jpg" alt="safe-money" border="0"/>
 				</div>
@@ -34,20 +34,22 @@ const TurismoDaSaude = () => {
 					</p>
 				</div>
 			</div>
-			<div class="row thirdRow">
-				<div class="col-6">
+			<div class="row thirdRow d-flex flex-wrap justify-content-center">
+				<div class="col">
 					<p className="photoText">
 						Estamos comprometidos em oferecer tratamentos dentários de excelência, garantindo
 						que cada paciente tenha uma experiência positiva e resultados duradouros durante sua estadia em Portugal.
 					</p>
 				</div>
-				<div class="col-6">
+			</div>
+			<div class="row fourthRow d-flex flex-wrap justify-content-center">
+				<div class="col">
 					<img src="https://i.ibb.co/9rXT4vB/turista-porto.jpg" alt="turista-porto" border="0"/>
 				</div>
 			</div>
 			<div className="photoTextFinal">
 				<p>
-					Estamos aqui para fazer parte da sua jornada em direção a um sorriso saudável e radiante, em um dos 
+					Queremos fazer parte da sua jornada em direção a um sorriso saudável e radiante, em um dos 
 					destinos mais encantadores para turismo de saúde.
 				</p>
 			</div>
