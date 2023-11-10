@@ -43,7 +43,7 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-#firstCard, #secondCard, #thirdCard, #fourthCard, #fifthCard{
+#firstCard, #secondCard, #thirdCard, #fourthCard, #fifthcard{
     height: 100%;
     background-color: white;
     border-radius: 20px;
@@ -66,3 +66,22 @@
     justify-content:space-around;
     margin-bottom: 100px;
 }  
+
+@media (max-width: 800px){
+    #firstCard, #secondCard, #thirdCard, #fourthCard, #fifthcard{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    #firstRowClinic, #secondRowClinic{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    #firstRowClinic{
+        margin-bottom: none;
+    }
+}
+

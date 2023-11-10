@@ -3,6 +3,28 @@ import React, {useState} from "react";
 import "../../styles/sobreNos.css";
 
 const SobreNos = () => {
+
+  /*const objects = document.querySelectorAll('.object');
+
+    objects.forEach(object => {
+      object.addEventListener('click', () => {
+        // Verifica se a .infoText está visível
+        const infoText = object.querySelector('.infoText');
+        if (infoText.style.display === 'flex') {
+          // Fecha a .infoText
+          infoText.style.display = 'none';
+          // Redefine a altura da .object
+          object.style.height = '80px'; // Ajuste a altura desejada
+        } else {
+          // Abre a .infoText
+          infoText.style.display = 'flex';
+          // Ajusta a altura da .object para acomodar a .infoText
+          const infoTextHeight = infoText.clientHeight;
+          object.style.height = `${80 + infoTextHeight}px`; // Ajuste a altura inicial + altura da .infoText
+        }
+      });
+    });*/
+    
     return (
       <div className="contentAboutUs">
         <div className="textAboutUs">
@@ -22,7 +44,7 @@ const SobreNos = () => {
         </div>
         <div className="values">
                 <div className="object">
-                    <strong>Excelência</strong>
+                      <strong>Excelência</strong>
                     <div className="infoText">
                     Buscamos a excelência em cada procedimento, adotando as últimas
                     inovações e técnicas para garantir o melhor para os nossos pacientes.
@@ -30,7 +52,7 @@ const SobreNos = () => {
                 </div>
         
                 <div className="object">
-                    <strong>Cuidado Compassivo</strong>
+                      <strong>Cuidado Compassivo</strong>
                     <div className="infoText">
                     Nossa abordagem é moldada pela compaixão e empatia. Cada paciente é
                     único e tratamos a todos com a atenção e carinho que merecem.
@@ -38,7 +60,7 @@ const SobreNos = () => {
                 </div>
         
                 <div className="object">
-                    <strong>Confiança e Transparência</strong>
+                      <strong>Confiança e Transparência</strong>
                     <div className="infoText">
                     Construímos relações baseadas na confiança, mantendo uma comunicação
                     aberta e transparente com nossos pacientes em todas as etapas do

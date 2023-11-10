@@ -86,7 +86,7 @@ const Contactos = () => {
                                     class="input-slide" 
                                     id="country" 
                                     name="country" 
-                                    placeholder="Pais" 
+                                    placeholder="País" 
                                     autocomplete="off" 
                                     required=""
                                     value={country}

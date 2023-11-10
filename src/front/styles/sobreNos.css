@@ -45,6 +45,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.titleCommitment{
+    margin-top: 50px;
+}
 .commitment{
     width: 100%;
     border-radius: 15px;
@@ -80,14 +83,12 @@
     justify-content: space-around;
     margin-top: 25px;
     margin-bottom: 35px;
-    height: 300px;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
 }
 .object {
     width: 22%;
-    height: 80px;
     background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
     background-position: center;
     background-size: cover;
@@ -97,11 +98,12 @@
     margin: 20px;
     font-size: 3vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative; 
-    margin-bottom: 20px;
+    margin-bottom: 23vh;
   }
   
   .infoText {
@@ -118,9 +120,7 @@
     color: white;
     top: 100%; /* Muda a posição para aparecer abaixo do objeto */
     left: 0;
-    margin-bottom: 50px;
   }
-  
   .object:hover .infoText {
     display: flex;
     flex-direction: row;
@@ -152,6 +152,7 @@
         border-radius: 15px;
         font-size: 3vh;
         margin-bottom: 3vh;
+        margin-top: 50px;
         background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
         background-position: center;
         background-size: cover;
@@ -159,6 +160,7 @@
         text-align: center;
         display: flex;
         align-items: center;
+        margin-top: auto;
     }
     .valuesImage{
         width: 100%;
@@ -176,12 +178,14 @@
     .values{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        grid-gap: 20px;
         align-items: center;
         margin-bottom: 5.5vh;
         border-radius: 15px;
         background-size: cover;
         background-position: center;
+        position: relative;
+        overflow-y: visible;
     }
     .object {
         width: 35vh;
@@ -196,54 +200,53 @@
         margin: 1.5vh;
         font-size: 3vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        position: relative; 
-        margin-bottom: 2vh;
+        margin-bottom: 10px;
     }
       
     .infoText {
-    display: none;
-    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    padding: 1vh;
-    margin-top: 4vh;
-    font-size: 2vh;
-    border-radius: 15px;
-    position: absolute;
-    color: white;
-    top: 100%; /* Muda a posição para aparecer abaixo do objeto */
-    left: 0;
-    margin-bottom: 50px;
+        display: none;
+        background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding: 1vh;
+        margin-top: 15px;
+        font-size: 2vh;
+        border-radius: 15px;
+        position: relative;
+        color: white;
+        top: 100%; /* Muda a posição para aparecer abaixo do objeto */
+        left: 0;
+        
     }
       
     .object:hover .infoText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .imageAboutUs {
-    width: 100%;
-    height: 50vh;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        width: 100%;
+        height: 50vh;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .imageAboutUs img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
   

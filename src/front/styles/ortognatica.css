@@ -3,42 +3,51 @@
     flex-direction: column;
     margin: 5%;
 }
-.introduction{
+.introductionOrtognatica{
     display: flex;
     flex-direction: row;
-    font-size: 1.5vw;
+    font-size: 3vh;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
-.introduction-text, .cirurgia-text{
+.introductionTextOrtognatica{
     width: 100%;
     margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
-.introducao-image-ortognatica, .esqueleto-part{
+.cirurgiaText{
+    width: 100%;
+    margin-right: 25px;
+}
+.introducaoImageOrtognatica, .esqueletoPart{
     width: 100%;
     max-height: 450px;
     left: 0;
     display: flex;
     margin-bottom: 50px;
 }
-.introducao-image-ortognatica img, .esqueleto-image img{
+.introducaoImageOrtognatica img, .esqueletoImage img{
     width: 100%;
-    height: 90%;
+    height: 100%;
     border-radius: 20px;
     object-fit: cover;
     overflow:hidden;
 }
-.esqueleto-part{
+.esqueletoPart{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.5vw;
+    font-size: 3vh;
 }
-.photos{
+.photosOrtognatica{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 50px;
-    max-height: 38vh;
     width: 100%; 
 }
 .exemplo-image1, .exemplo-image2, .exemplo-image3{
@@ -50,14 +59,25 @@
 .exemplo-image1 img, .exemplo-image2 img, .exemplo-image3 img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     object-fit: cover;
     overflow:hidden;
 }
-.final-text{
+.finalTextOrtognatica{
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
+    font-size: 2,5vh;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:25px;
+    padding-bottom: 25px;
     margin-top: 50px;
+    color: white;
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .moreInfo{
     display: flex;
@@ -66,15 +86,65 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.btn-more-info{
+.btnOrtognatica{
     border: none;
     border-radius: 20px;
-    height: 30px;
+    height: 50px;
     width: 30%;
-    background-color: rgb(50, 50, 231);
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     align-self: center;
+}
+
+@media (max-width: 800px){
+    .introductionOrtognatica{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .introductionTextOrtognatica{
+        width: 100%;
+        font-size: 2vh;
+        margin-left: 0;
+    }
+    .esqueletoPart{
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 75px;
+    }
+    .cirurgiaText{
+        width: 100%;
+        font-size: 2vh;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .photosOrtognatica{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 25px;
+        width: 100%; 
+    }
+    .exemplo-image1, .exemplo-image2, .exemplo-image3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .btnOrtognatica{
+        border: none;
+        border-radius: 20px;
+        height: 50px;
+        width: 60%;
+    }
+    
 }
