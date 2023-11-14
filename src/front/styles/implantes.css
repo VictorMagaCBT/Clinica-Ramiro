@@ -3,66 +3,69 @@
     flex-direction: column;
     margin: 5%;
 }
-.introduction{
+.introductionImplantes{
     display: flex;
     flex-direction: row;
-    font-size: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
     margin-top: 50px;
 }
-.introduction-text{
+.introductionText{
     width: 100%;
     margin-left: 25px;
 }
-.introducao-image, .dentadura-part{
-    width: 100%;
-    max-height: 450px;
-    border-color: red;
-    border-style: groove;
+.introductionImageImplantes{
+    width: 60%;
+    height: 400px;
     left: 0;
     display: flex;
     margin-bottom: 50px;
 }
-.introducao-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    overflow:hidden;
-}
-.dentadura-image img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    overflow:hidden;
-}
-.dentadura-part{
+.dentaduraPart{
+    font-size: 3vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 1.5vw;
+    justify-content: center;
+    margin: 5%;
+}
+
+.introductionImageImplantes img {
     width: 100%;
-    max-height: 450px;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow:hidden;
+}
+.dentaduraImage{
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
-    border-color: red;
-    border-style: groove;
+}
+.dentaduraImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow:hidden;
 }
 .photos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 50px;
-    max-height: 38vh;
+    max-height: 35vh;
     width: 100%; 
 }
 .exemplo-first-image, .exemplo-second-image{
     width: 50%;
     height: 100%;
-    border-color: red;
-    border-style: groove;
     display: flex;
-    margin-bottom: 50px;
-    margin:5%;  
+    margin-inline:5%;  
 }
 .exemplo-first-image img, .exemplo-second-image img{
     width: 100%;
@@ -71,34 +74,111 @@
     object-fit: cover;
     overflow:hidden;
 }
-.final-text{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5vw;
-    margin-top: 5%;
-    background-color: rgb(207, 205, 205);
+.bottomTextImplantes{
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    font-size: 3vh;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
     padding: 10px;
+    border-radius: 20px;
+    margin-top: 12vh;
 }
-.moreInfo{
+.moreInfoImplantes{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.btn-more-info{
+.btnImplantes{
     border: none;
     border-radius: 20px;
-    height: 30px;
+    height: 50px;
     width: 30%;
-    background-color: rgb(50, 50, 231);
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     align-self: center;
+}
+
+@media (max-width: 800px){
+    .introductionImplantes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vh;
+    }
+    .introductionImageImplantes{
+        width: 100%;
+        height: 200px;
+        display: flex;
+    }
+    .dentaduraPart{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        font-size: 2vh;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .dentaduraImage{
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .photos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 25px;
+        height: 200vh;
+        width: 100%; 
+    }
+    .exemplo-first-image, .exemplo-second-image{
+        width: 70%;
+        height: 100%;
+        margin-left: auto;
+        margin-bottom: 35px;
+        margin-right: auto;
+    }
+    .bottomTextImplantes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 2.5vh;
+        margin-top: 40px;
+    }
+    .moreInfoImplantes{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .btnImplantes{
+        border: none;
+        border-radius: 20px;
+        height: 50px;
+        width: 100%;
+        font-size: 3vh;
+    }
+
 }

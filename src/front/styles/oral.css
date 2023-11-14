@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5vw;
+    font-size: 3vh;
     margin-top: 50px;
 }
 .introducao-image-Oral{
@@ -18,7 +18,7 @@
     display: flex;
     align-content: center;
     overflow:hidden;
-
+    border-radius: 20px;
 }
 .oral-text, .introduction-text-Oral{
     width: 80%;
@@ -29,7 +29,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5vw;
+    font-size: 3vh;
 }
 .introducao-image-Oral img{
     width: 100%;
@@ -38,31 +38,29 @@
     align-self: center;
     
 }
-
-.bottom-oral-text{
-    background-color: rgb(207, 205, 205);
-    font-size: 1.5vw;
-    max-width: 80%;
+.bottomOralText{
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
+    color:white;
+    font-size: 3vh;
+    max-width: 80%;
+    margin-top: 40px;
     padding: 10px;
     border-radius: 20px;
-    margin-top: 25px;
 }
-.btn-more-info{
-    border: none;
-    border-radius: 20px;
-    height: 50px;
-    width: 30%;
-    background-color: rgb(50, 50, 231);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    align-self: center;
+.moreInfoOral{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .body-photo-part{
-    font-size: 1.5vw;
+    font-size: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -80,4 +78,73 @@
     height: 100%;
     object-fit: cover;
     overflow:hidden;
+    border-radius: 20px;
+}
+.btnOral{
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 30%;
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+@media (max-width: 800px){
+    .introductionOral{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2vh;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .oral-text, .introduction-text-Oral{
+        width: 100%;
+        font-size: 2vh;
+    }
+    .introducao-image-Oral, .body-photo-image{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 250px;
+    }
+    .body-photo-part{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        font-size: 2vh;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .bottomOralText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 2.5vh;
+    }
+    .moreInfoOral{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .btnOral{
+        border: none;
+        border-radius: 20px;
+        height: 50px;
+        width: 100%;
+        font-size: 3vh;
+    }
 }
