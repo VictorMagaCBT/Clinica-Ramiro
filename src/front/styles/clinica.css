@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
-    margin-bottom: 50px;
+    
 }
 .nameClinica{
     position: absolute;
@@ -16,7 +16,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    color: white;
+    color: rgb(250, 241, 241);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,17 +31,17 @@
     object-fit: cover;
 }
 .introductionClinica{
-    width: 80%;
-    height: 80%;
+    width:100%;
     font-size: 3vh;
     display: flex;
+    background-color: rgb(255, 252, 252);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 #firstCard, #secondCard, #thirdCard, #fourthCard, #fifthcard{
     height: 100%;
@@ -52,6 +52,17 @@
     justify-content: center;
     align-items: center;
 }
+.cardTitleClinica{
+    font-size: 4vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cardTitleClinica:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
 .card img {
     width: 100%;
     height: 350px;

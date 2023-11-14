@@ -4,27 +4,6 @@ import "../../styles/sobreNos.css";
 
 const SobreNos = () => {
 
-  /*const objects = document.querySelectorAll('.object');
-
-    objects.forEach(object => {
-      object.addEventListener('click', () => {
-        // Verifica se a .infoText está visível
-        const infoText = object.querySelector('.infoText');
-        if (infoText.style.display === 'flex') {
-          // Fecha a .infoText
-          infoText.style.display = 'none';
-          // Redefine a altura da .object
-          object.style.height = '80px'; // Ajuste a altura desejada
-        } else {
-          // Abre a .infoText
-          infoText.style.display = 'flex';
-          // Ajusta a altura da .object para acomodar a .infoText
-          const infoTextHeight = infoText.clientHeight;
-          object.style.height = `${80 + infoTextHeight}px`; // Ajuste a altura inicial + altura da .infoText
-        }
-      });
-    });*/
-    
     return (
       <div className="contentAboutUs">
         <div className="textAboutUs">
@@ -83,11 +62,15 @@ const SobreNos = () => {
             Estamos empenhados em proporcionar a cada paciente uma jornada de
             tratamento personalizada e transformadora. Desde o momento em que
             entra em nossa clínica até a completa recuperação, estamos ao seu
-            lado, cuidando de cada detalhe. A equipa do Dr. Ramiro Silva, não se
-            preocupa apenas em restaurar sorrisos, mas também renovamos a
-            confiança e a qualidade de vida de nossos pacientes. Sua saúde
-            bucomaxilofacial é nossa prioridade, e sua satisfação é nossa maior
-            recompensa. Sinta-se em casa, pois você está prestes a embarcar em uma
+            lado, cuidando de cada detalhe. 
+            <br/>
+            A equipa do Dr. Ramiro Silva, não se preocupa apenas em restaurar 
+            sorrisos, mas também renovamos a confiança e a qualidade de vida dos 
+            nossos pacientes. 
+            A sua saúde bucomaxilofacial é nossa prioridade, e sua satisfação é 
+            nossa maior recompensa. 
+            <br/>
+            Sinta-se em casa, pois você está prestes a embarcar em uma
             jornada de transformação conosco.
           </p>
         </div>

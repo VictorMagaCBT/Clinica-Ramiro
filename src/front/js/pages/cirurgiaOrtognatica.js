@@ -61,10 +61,19 @@ const CirurgiaOrtognatica = () => {
                 </div>
             </div>
             <div className="finalTextOrtognatica">
-                <p className="cirurgia-text2">A maravilha da cirurgia ortognática está em sua capacidade de redefinir e reequilibrar os traços faciais, muitas vezes impactando positivamente a sua respiração, fala e, claro, sua aparência. Avançar ou recuar mandíbulas e maxilares, corrigir mordidas abertas ou profundas, alinhar um queixo desalinhado - tudo isso é possível e mais. É uma verdadeira revolução, não apenas para o seu sorriso, mas para a sua autoestima.
+                <p className="cirurgia-text2">
+                    A maravilha da cirurgia ortognática está em sua capacidade de redefinir e reequilibrar os 
+                    traços faciais, muitas vezes impactando positivamente a sua respiração, fala e, claro, sua
+                    aparência. 
+                        <br/>
+                    Avançar ou recuar mandíbulas e maxilares, corrigir mordidas abertas ou profundas, alinhar 
+                    um queixo desalinhado - tudo isso é possível e mais. É uma verdadeira revolução, não apenas
+                    para o seu sorriso, mas para a sua autoestima.
                 </p>
-                <p className="cirurgia-text3">A cirurgia ortognática é um procedimento complexo que requer um cirurgião oral e maxilofacial altamente qualificado. O Dr. Paulo Coelho é um especialista em cirurgia ortognática, com anos de experiência e um histórico de sucesso. Ele é um dos poucos cirurgiões orais e maxilofaciais do Brasil que é membro da Academia Americana de Cirurgia Ortognática e Ortodontia. Ele também é membro da Sociedade Brasileira de Cirurgia e Traumatologia Buco-Maxilo-Facial e da Associação Brasileira de Cirurgia Ortognática e Ortodontia.</p> 
-                <p className="cirurgia-text4">Por meio dessa cirurgia, você não apenas transforma sua face, mas também transforma sua história. Sua jornada para um sorriso brilhante e uma vida mais plena está apenas a um passo de distância.</p>
+                <p className="cirurgia-text4">
+                    Por meio dessa cirurgia, você não apenas transforma sua face, mas também transforma sua história.
+                        <br/>
+                    A sua jornada para um sorriso brilhante e uma vida mais plena está apenas a um passo de distância.</p>
             </div>
             <div className="moreInfo">
                 <button className="btnOrtognatica" 
