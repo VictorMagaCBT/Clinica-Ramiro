@@ -16,6 +16,7 @@ import Clinica from "./pages/clinica";
 import TurismoDaSaude from "./pages/turismoDaSaude";
 import Blog from "./pages/blog";
 
+
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 

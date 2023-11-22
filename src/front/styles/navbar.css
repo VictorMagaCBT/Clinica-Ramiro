@@ -5,9 +5,7 @@
     margin-right: 5%;
     margin-top: 5px;
 }
-
 #navbarLinks{
-    padding: 10px;
     overflow-y: visible;
     display: flex;
     flex-direction: row;
@@ -22,6 +20,58 @@
     background-color: white;
     object-fit: cover;
     top: 0;
+}
+.languageSwitcher{
+    width: 30px;
+    background-color: transparent;
+    margin: 5px;
+    left: 0;
+    
+}
+.btn-navbar::after {
+    display: none;
+}
+.dropdown-menu {
+    border: none;
+}
+#language button{
+    width: 100%;
+    background-color: transparent;
+    align-items: end;
+    border: none;
+    margin-top: 2px;
+}
+#language img{
+    width: 100%;
+    background-color: transparent;
+    object-fit: cover;
+    margin:5px;
+}
+#language button:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    border: none;
+    top: 0;
+}
+
+#dropdownMaps{
+    justify-content: center;
+    align-items: center;
+    margin-block: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#dropdownMaps:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: white;
+    border: none;
+    top: 0;
+}
+#dropdownMaps img{
+    width: 100%;
+    background-color: transparent;
+    object-fit: cover;
 }
 
 @media (max-width: 800px){

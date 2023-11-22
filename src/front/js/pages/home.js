@@ -1,12 +1,18 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 import "../../styles/home.css";
 
 export const Home = () => {
 	const navigate = useNavigate();
 	const { store, actions } = useContext(Context);
+
+	const {t} = useTranslation();
+	console.log("Translation for 'Bem-vindo':", t("Bem-vindo"));
+    console.log("Translation for 'Desejamos-lhe':", t("Desejamos-lhe"));
 
 	return (
 		<div className="fullContent">
@@ -16,31 +22,26 @@ export const Home = () => {
 
 			<div className="firstRowHome">
 				<div className="welcomeMsg">
-					<h1 className="bemVindo mb-3">Bem Vindo</h1>
+					<h1 className="bemVindo mb-3">{t("Bem-vindo")}</h1>
 					<p className="text-center">
-						Desejamos-lhe uma calorosa recepção a este espaço dedicado à sua saúde bucomaxilofacial.
+						{t("Desejamos-lhe")}
 							<br/><br/> 
-						Somos especialistas em cirurgia bucomaxilofacial e estamos aqui para oferecer o mais alto 
-						padrão de cuidados, combinando experiência e inovação para garantir a sua saúde e bem-estar.
+						{t("SomosEspecialistas")}
 							<br/><br/>
-						Na nossa clínica, valorizamos a confiança e a satisfação dos nossos pacientes, especialmente 
-						aqueles que vêm de longe para buscar tratamento especializado.
+						{t("NaNossaClinicaValorizamos")}
 					</p>
 					<p>
-						Explore o nosso site para descobrir mais sobre os nossos serviços, a nossa equipa altamente qualificada
-						e a nossa filosofia de cuidado centrado no paciente. 
+						{t("ExploreONossoSite")}
 							<br/><br/>
-						Estamos ansiosos para conhecê-lo e ajudá-lo 
-						a alcançar uma saúde bucomaxilofacial ótima.
+						{t("EstamosAnsiosos")}
 					</p> 
 					<p>
-						Não hesite em contactar-nos para agendar a sua consulta ou para obter mais informações. Estamos aqui 
-						para o receber e cuidar de si.
+						{t("NaoHesiteEnContactarnos")}
 					</p>
 					<p>
-						Atenciosamente,
+						{t("Atenciosamente")}
 							<br/><br/>
-						Equipa da Clínica de Cirurgia Bucomaxilofacial do Dr. Ramiro Silva
+						{t("EquipaDrRamiro")}
 					</p>
 				</div>
 				<div className="photoRamiro">
@@ -48,17 +49,17 @@ export const Home = () => {
 						<img src="https://i.ibb.co/SyJn2XT/foto-ramiro-cortada.jpg" alt="foto-ramiro-cortada" border="0"/>
 					</div>
 					<h1>Dr Ramiro Silva</h1>
-					<h3 className="lineUnderName">Cirurgia e Traumatologia Buco Máxilo Facial</h3>
+					<h3 className="lineUnderName">{t("CirurgiaTraumatologiaBucomaxilofacial")}</h3>
 				</div>
 			</div>
 			<div className="divider">
-				<div className="dividerText">Especialidades</div>
+				<div className="dividerText">{t("Especialidades")}</div>
 			</div>
 			
 		
 			<div class="card-group d-flex flex-wrap justify-content-around">
 				<div class="card" id="cardOrtognatica">
-					<h3 class="card-title text-center">Cirurgia Ortognática</h3>
+					<h3 class="card-title text-center">{t("CirurgiaOrtognatica")}</h3>
 						<img 
 							src="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" 
 							alt="Imagem-9-sem-Identidade-min" 
@@ -66,21 +67,19 @@ export const Home = () => {
 						/>
 					<div class="card-body">
 						<p class="card-text">
-							A cirurgia ortognática é um procedimento cirúrgico utilizado para corrigir problemas relacionados
-							à posição e alinhamento dos ossos da face e mandíbula. 
+							{t("CirurgiaOrtognáticaEUmProcedimento")}
 								<br/><br/>
-							Essa cirurgia é realizada por um cirurgião maxilofacial e tem como objetivo melhorar tanto a 
-							estética quanto a funcionalidade da face.
+							{t("EssaCirurgiaERealizada")}
 						</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/ortognatica")}>Saiba mais...</button>
+						<button type="button" class="btn btn-primary" onClick={() => navigate ("/ortognatica")}>{t("SaibaMais")}</button>
 					</div>
 				</div>
 				<div class="card" id="reabilitacaoImplantes" >
-					<h3 class="card-title text-center">Cirurgia da Reabilitação sobre Implantes</h3>
+					<h3 class="card-title text-center">{t("CirurgiaDaReabilitaçãoSobreImplantes")}</h3>
 						<img src="https://i.ibb.co/86M3sPT/imagem-implantes-3d.webp" alt="imagem-implantes-3d" border="0"/>
 					<div class="card-body">
-						<p class="card-text">A cirurgia de reabilitação com implantes é um procedimento odontológico avançado que visa restaurar a função e estética bucal por meio da colocação de implantes dentários. Os implantes são estruturas de titânio inseridas no osso da mandíbula ou maxila para substituir dentes ausentes ou danificados.</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/implantes")}>Saiba mais...</button>
+						<p class="card-text">{t("AReabilitaçaoSobreImplantesEUmProcedimento")}</p>
+						<button type="button" class="btn btn-primary" onClick={() => navigate ("/implantes")}>{t("SaibaMais")}</button>
 					</div>
 				</div>
 				
@@ -88,27 +87,27 @@ export const Home = () => {
 
 				<div class="card-group d-flex flex-wrap justify-content-around" id="secondCardRow">
 				<div class="card" id="oral">
-					<h3 class="card-title text-center">Cirurgia Oral</h3>
+					<h3 class="card-title text-center">{t("CirurgiaOral")}</h3>
 						<img src="https://i.ibb.co/smjCq5h/Imagem-21.jpg" alt="Imagem-21" border="0"/>
 					<div class="card-body">
-						<p class="card-text">A cirurgia oral é um procedimento realizado na boca e regiões próximas, envolvendo intervenções cirúrgicas para tratar uma variedade de condições bucais. Essas intervenções podem abordar desde a remoção de dentes impactados, tratamento de lesões, até correção de problemas ósseos e teciduais.</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/cirurgia-oral")}>Saiba mais...</button>
+						<p class="card-text">{t("ACirurgiaOralEUmProcedimentoRealizadoNaBoca")}</p>
+						<button type="button" class="btn btn-primary" onClick={() => navigate ("/cirurgia-oral")}>{t("SaibaMais")}</button>
 					</div>
 				</div>
 				<div class="card" id="remocaoSisos">
-					<h3 class="card-title text-center">Remoção de Dentes Inclusos</h3>
+					<h3 class="card-title text-center">{t("RemoçãoDentesInclusos")}</h3>
 						<img src="https://i.ibb.co/h9R2kxx/siso-3d2.webp" alt="siso-3d2" border="0"/>
 					<div class="card-body">
-						<p class="card-text">A remoção de dentes inclusos é um procedimento odontológico realizado para extrair dentes que não conseguem erupcionar normalmente na boca. Esses dentes, também chamados de dentes impactados, ficam retidos dentro da gengiva ou osso, o que pode causar desconforto e problemas bucais.</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/remocao-sisos")}>Saiba mais...</button>
+						<p class="card-text">{t("ProcedimentoOdontologicoParaExtrair")}</p>
+						<button type="button" class="btn btn-primary" onClick={() => navigate ("/remocao-sisos")}>{t("SaibaMais")}</button>
 					</div>
 				</div>
 				<div class="card" id="quistos">
-					<h3 class="card-title text-center">Remoção de Quistos</h3>
+					<h3 class="card-title text-center">{t("RemoçãoDeQuistos")}</h3>
 						<img src="https://i.ibb.co/6wwGTLp/Imagem-31-tratada.jpg" alt="Imagem-31-tratada" border="0"/>
 					<div class="card-body">
-						<p class="card-text">A cirurgia de remoção de cistos da boca é um procedimento odontológico realizado para extrair cistos que se formam na boca. Os cistos são bolsas cheias de líquido que podem se desenvolver em diferentes áreas da boca, como na gengiva, no osso ou nos tecidos ao redor dos dentes.</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/remocao-quistos")}>Saiba mais...</button>
+						<p class="card-text">{t("ProcedimentoParaExtrairQuistos")}</p>
+						<button type="button" class="btn btn-primary" onClick={() => navigate ("/remocao-quistos")}>{t("SaibaMais")}</button>
 					</div>
 				</div>
 				
@@ -117,11 +116,11 @@ export const Home = () => {
 			<div className="row-tourismHome">
 				<img src="https://i.ibb.co/7kYbHMs/medical-tourism.jpg" alt="medical-tourism" border="0"/>
 				<div className="tourism-content">
-					<h1>TURISMO DA SAÚDE</h1>
+					<h1>{t("TurismoDaSaude")}</h1>
 					<div className="tourismTextHome text-center mt-3">
-						<p>Portugal é um destino crescente no turismo de saúde, especialmente na área odontológica. A reputação de profissionais qualificados, instalações modernas e custos acessíveis atrai pacientes internacionais em busca de tratamentos dentários de alta qualidade.</p>
+						<p>{t("PortugalÉDestinoCrescente")}</p>
 					</div>
-					<button type="button" class="btn btn-danger" onClick={() => navigate ("/turismo-da-saude")}>Saiba mais...</button>
+					<button type="button" class="btn btn-danger" onClick={() => navigate ("/turismo-da-saude")}>{t("SaibaMais")}</button>
 				</div>
 			</div>
 			
