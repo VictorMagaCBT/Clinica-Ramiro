@@ -1,19 +1,23 @@
-import React, {useState} from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "../../styles/sobreNos.css";
 
 const SobreNos = () => {
+  
+  const navigate = useNavigate()
+  const {t} = useTranslation()
 
     return (
       <div className="contentAboutUs">
         <div className="textAboutUs">
-          <h1>Somos mais do que uma Clínica</h1>
+          <h1>{t("SomosMaisQueUmaClinica")}</h1>
           <h5>
-            Somos um santuário de saúde bucomaxilofacial, onde cada sorriso é uma obra de arte que merece ser
-            celebrada. Nossa missão é transformar vidas, uma cirurgia de cada vez.
+          {t("SomosUmSantuarioDeSaude")}
           </h5>
         </div>  
-          <h3 className="titleValues">Os Nossos Valores</h3>
+          <h3 className="titleValues">{t("OsNossosValores")}</h3>
         <div className="valuesImage">
           <img
             src="https://i.ibb.co/vZdWvQP/dentista-teclado-min.jpg" 
@@ -23,55 +27,41 @@ const SobreNos = () => {
         </div>
         <div className="values">
                 <div className="object">
-                      <strong>Excelência</strong>
+                      <strong>{t("Excelência")}</strong>
                     <div className="infoText">
-                    Buscamos a excelência em cada procedimento, adotando as últimas
-                    inovações e técnicas para garantir o melhor para os nossos pacientes.
+                    {t("BuscamosAEXcelência")}
                     </div>
                 </div>
         
                 <div className="object">
-                      <strong>Cuidado Compassivo</strong>
+                      <strong>{t("CuidadoCompassivo")}</strong>
                     <div className="infoText">
-                    Nossa abordagem é moldada pela compaixão e empatia. Cada paciente é
-                    único e tratamos a todos com a atenção e carinho que merecem.
+                    {t("AbordagemMoldadaPelaCompaixão")}
                     </div>
                 </div>
         
                 <div className="object">
-                      <strong>Confiança e Transparência</strong>
+                      <strong>{t("ConfiançaTransparência")}</strong>
                     <div className="infoText">
-                    Construímos relações baseadas na confiança, mantendo uma comunicação
-                    aberta e transparente com nossos pacientes em todas as etapas do
-                    tratamento.
+                    {t("ConstruimosRelaçõesDeConfiança")}
                     </div>
                 </div>
         
                 <div className="object">
-                    <strong>Educação e Orientação</strong>
+                    <strong>{t("EducaçãoOrientação")}</strong>
                     <div className="infoText">
-                    Acreditamos que a educação é o primeiro passo para a saúde. Guiamos
-                    nossos pacientes com informações precisas para que possam fazer
-                    escolhas informadas sobre seu tratamento.
+                    {t("AcreditamosQueAEducação")}
                     </div>
                 </div>
         </div>
-          <h3 className="titleCommitment mt-3">Nosso Compromisso</h3>
+          <h3 className="titleCommitment mt-3">{t("NossoCompromisso")}</h3>
         <div className="commitment">
           <p>
-            Estamos empenhados em proporcionar a cada paciente uma jornada de
-            tratamento personalizada e transformadora. Desde o momento em que
-            entra em nossa clínica até a completa recuperação, estamos ao seu
-            lado, cuidando de cada detalhe. 
-            <br/>
-            A equipa do Dr. Ramiro Silva, não se preocupa apenas em restaurar 
-            sorrisos, mas também renovamos a confiança e a qualidade de vida dos 
-            nossos pacientes. 
-            A sua saúde bucomaxilofacial é nossa prioridade, e sua satisfação é 
-            nossa maior recompensa. 
-            <br/>
-            Sinta-se em casa, pois você está prestes a embarcar em uma
-            jornada de transformação conosco.
+            {t("EstamosEmpenhados")} 
+                <br/>
+            {t("NãoApenasRestaurarSorrisos")} 
+                <br/>
+            {t("SintasSeEmCasa")}
           </p>
         </div>
         <div className="imageAboutUs">
@@ -80,6 +70,9 @@ const SobreNos = () => {
             alt="Imagem-24-recortada-HD-min" 
             border="0"
           />
+        </div>
+        <div className="back">
+            <button type="button" class="buttonBack" onClick={() => navigate ("/")}>{t("Voltar")}</button>
         </div>
       </div>
     );

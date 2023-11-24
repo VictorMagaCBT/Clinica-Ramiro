@@ -107,7 +107,7 @@
     margin-bottom: 23vh;
   }
   
-  .infoText {
+.infoText {
     display: none;
     background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
     background-position: center;
@@ -121,15 +121,38 @@
     color: white;
     top: 100%; /* Muda a posição para aparecer abaixo do objeto */
     left: 0;
-  }
+}
   .object:hover .infoText {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+.buttonBack{
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 30%;
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  @media (max-width: 800px){
+@media (max-width: 800px){
     .textAboutUs{
         width: 100%;
         padding: 5vh;

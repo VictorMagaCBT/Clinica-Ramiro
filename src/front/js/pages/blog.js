@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "../../styles/blog.css";
 
 const Blog = () => {
+
+    const navigate = useNavigate()
+    const  {t} = useTranslation();
+
     return (
         <div className="containerAllArticles">
             <h1 className="pageTitle mt-5 text-center">Artigos Interessantes</h1>
@@ -24,6 +30,9 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+            </div>
+            <div className="back">
+                <button type="button" class="buttonBack" onClick={() => navigate ("/")}>{t("Voltar")}</button>
             </div>
         </div>
     );

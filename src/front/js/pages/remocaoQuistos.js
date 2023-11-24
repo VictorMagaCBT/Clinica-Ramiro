@@ -1,33 +1,34 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "../../styles/quistos.css";
 
 const RemocaoQuistos = () => {
 
     const navigate = useNavigate();
+    const {t} = useTranslation();
+
     return (
         <div className="content-Quistos">
-            <h1 className="titleQuistos mt-5 text-center">Cirurgia Para Remoção de Quistos</h1>
+            <h1 className="titleQuistos mt-5 text-center">{t("RemoçãoDeQuistos")}</h1>
             <div className="introductionQuistos">
                 <div className="introducaoImageQuistos">
                     <img src="https://i.ibb.co/cCB0XxV/jovemsorriso.jpg" alt="jovemsorriso" border="0"/>
                 </div>
                 <p className="introductionTextQuistos text-center">
-                    Quando o silêncio da boca esconde um desafio - cistos, intrusos indesejados que podem surgir sem aviso. 
-                    <br/><br/>
-                    É nesses momentos que a cirurgia para remoção de cistos na boca se torna uma necessidade séria, 
-                    uma solução eficaz para restaurar a saúde oral.
+                    {t("QuandoOSilencioDaBocaEscondeDesafios")}
+                        <br/><br/>
+                    {t("NecessidadeSeria")}
                 </p>
             </div>
             <div className="quistosText">
                 <p className="text-center">
-                    Os cistos bucais podem ser comparados a convidados indesejados que se alojam silenciosamente.
+                    {t("ConvidadosIndesejados")}
                         <br/><br/>
-                    A cirurgia emerge como o remédio necessário, com especialistas dentais utilizando suas habilidades
-                    e conhecimento para investigar e erradicar esses problemas. 
+                    {t("CirurgiaParaErradicarEsseProblema")}
                         <br/><br/>
-                    É uma abordagem focada e meticulosa, voltada para a restauração do bem-estar bucal.
+                    {t("AbordagemFocadaMeticulosa")}
                 </p>
             </div>
             <div className="photosQuistos">
@@ -43,18 +44,16 @@ const RemocaoQuistos = () => {
             </div>
             <div className="bottomQuistoText text-center">
                 <p>
-                    Ao optar por essa intervenção, você não apenas resolve a questão do cisto, mas também
-                    coloca sua saúde bucal de volta nos trilhos. 
+                    {t("SaudeBucalNosTrilhos")}
                         <br/><br/>
-                    É um processo que demanda precisão, mas que oferece alívio duradouro e permite que seu 
-                    sorriso recupere sua luminosidade.
+                    {t("DemandaPrecisaoMasAlivioDuradouro")}
                 </p>
             </div>
             <div className="moreInfoQuisto">
                 <button className="btnQuisto" 
                 data-toggle="modal" 
                 data-target="#exampleModalCenter"
-                onClick={() => navigate("/contactos")}>Quer saber mais...?</button>
+                onClick={() => navigate("/contactos")}>{t("QuerSaberMais?")}</button>
             </div>
         </div>
     );

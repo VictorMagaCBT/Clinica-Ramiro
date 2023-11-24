@@ -1,21 +1,22 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "../../styles/oral.css";
 
 const Oral = () => {
 
     const navigate = useNavigate();
+    const {t} = useTranslation();
 
     return (
         <div className="content-Oral">
-            <h1 className="titleOral mt-5 text-center">Cirurgia Oral</h1>
+            <h1 className="titleOral mt-5 text-center">{t("CirurgiaOral")}</h1>
             <div className="introductionOral">
                 <p className="introduction-text-Oral text-center">
-                    Às vezes, nossa boca pede uma intervenção. 
+                    {t("NossaBocaPedeIntervençao")}
                         <br/><br/>
-                    A cirurgia oral é a resposta, um campo onde a ciência se torna arte, resolvendo questões 
-                    de saúde e estética bucais.
+                    {t("CirurgiaOralÉResposta")}
                 </p>
                 <div className="introducao-image-Oral">
                 <img src="https://i.ibb.co/NNRWCLx/Imagem-15-recortada.jpg" alt="Imagem-15-recortada" border="0"/>
@@ -26,31 +27,30 @@ const Oral = () => {
                     <img src="https://i.ibb.co/28jrwH2/raiox.jpg" alt="raiox" border="0"/>
                 </div>
                 <p className="oral-text text-center">
-                    Imagine-a como um laboratório, onde os especialistas dentais são os pesquisadores e você, o paciente. 
+                    {t("ImagineUmLaboratorio")}
                         <br/><br/>
-                    Aqui, extração de dentes, enxertos ósseos e remoção de lesões ganham soluções. 
+                    {t("ExtraçaoDeDentesEnxertosOsseos")}
                         <br/><br/>
-                    É um processo estruturado, onde cada etapa é meticulosamente planejada para garantir um sorriso saudável.
+                    {t("ProcessoEstruturado")}
                 </p>
             </div>
             <div className="bottomOralText text-center">
                 <p>
-                    Essas intervenções não são apenas reparos; são melhorias, com o objetivo de aprimorar saúde e bem-estar. 
+                    {t("SaoReparosMelhorias")}
                         <br/><br/>
-                    Ao escolher essa abordagem, você está moldando um novo capítulo para sua saúde bucal, com os cirurgiões orais 
-                    como os facilitadores, ajustando e otimizando cada detalhe.
+                    {t("UmNovoCapituloNaSaudeBucal")}
                 </p>
                 <p>
-                    A cirurgia oral é a promessa de um sorriso renovado e a garantia de uma boca funcional. 
+                    {t("PromessaDeSorrisoRenovado")}
                         <br/><br/>
-                    É um caminho de progresso, onde a confiança ganha destaque e a vitalidade é o objetivo. 
+                    {t("ConfiançaGanhaDestaque")}
                 </p>
             </div>
             <div className="moreInfoOral">
                 <button className="btnOral" 
                 data-toggle="modal" 
                 data-target="#exampleModalCenter"
-                onClick={() => navigate("/contactos")}>Quer saber mais...?</button>
+                onClick={() => navigate("/contactos")}>{t("QuerSaberMais?")}</button>
             </div>
         </div>
     );

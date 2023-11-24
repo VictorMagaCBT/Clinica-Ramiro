@@ -1,22 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "../../styles/turismoDaSaude.css";
 
 const TurismoDaSaude = () => {
+
+	const navigate = useNavigate()
+	const  {t} = useTranslation();
+	
     return (
         <div className="fullContentTourism d-flex flex-wrap justify-content-center">
 			<div className="row-tourism">
-				<div className="turismo-da-saude">TURISMO DA SAÚDE</div>
+				<div className="turismo-da-saude">{t("TurismoDaSaude")}</div>
 			</div>
 			<div class="row firstRow d-flex flex-wrap justify-content-center">
 				<div class="col-6 d-flex flex-wrap">
 					<p className="photoText">
-						Portugal tem emergido como um dos destinos proeminentes no cenário global do turismo de saúde, 
-						com sua indústria odontológica ganhando destaque.
+						{t("PortugalDestinoroeminente")}	
 					</p>
 					<p className="photoText">
-						A combinação de profissionais altamente 
-						qualificados, tecnologia de ponta e um ambiente acolhedor tem atraído pacientes internacionais
-						em busca de tratamentos dentários de excelência.
+						{t("CombinaçãodeProfissionaiQualificados")}
 					</p>
 				</div>
 				<div class="col-6">
@@ -29,16 +33,14 @@ const TurismoDaSaude = () => {
 				</div>
 				<div class="col-6">
 					<p className="photoText">
-						Os pacientes desfrutam da oportunidade de receber cuidados odontológicos 
-						de alta qualidade enquanto exploram a rica herança cultural e paisagens deslumbrantes de Portugal.
+						{t("OsPacientesDesfrutam")}
 					</p>
 				</div>
 			</div>
 			<div class="row thirdRow d-flex flex-wrap justify-content-center">
 				<div class="col">
 					<p className="photoText">
-						Estamos comprometidos em oferecer tratamentos dentários de excelência, garantindo
-						que cada paciente tenha uma experiência positiva e resultados duradouros durante sua estadia em Portugal.
+						{t("EstamosComprometidosComTratamentosDeExcelência")}
 					</p>
 				</div>
 			</div>
@@ -49,10 +51,21 @@ const TurismoDaSaude = () => {
 			</div>
 			<div className="photoTextFinal">
 				<p>
-					Queremos fazer parte da sua jornada em direção a um sorriso saudável e radiante, em um dos 
-					destinos mais encantadores para turismo de saúde.
+					{t("QueremosFazerParteDaSuaJornada")}
 				</p>
 			</div>
+			<div class="row fourthRow d-flex flex-wrap justify-content-center">
+				<div className="back">
+					<button 
+						type="button" 
+						class="buttonBack" 
+						onClick={() => navigate ("/")}
+					>
+						{t("Voltar")}
+					</button>
+				</div>
+			</div>
+			
 		</div>	
     );
 };

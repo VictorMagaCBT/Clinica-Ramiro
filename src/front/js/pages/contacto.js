@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
+import { useTranslation } from "react-i18next";
 
 import "../../styles/contactos.css";
 
@@ -14,6 +15,7 @@ const Contactos = () => {
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
     const navigate = useNavigate();
+    const {t} = useTranslation();
 
     const handleSubmit = () => {
         create_user();
@@ -61,7 +63,7 @@ const Contactos = () => {
                 <div class="formulario">
                     
                     <div class="title-form">
-                    <h1><i class="fa-regular fa-comments"></i>  Fale Conosco Agora</h1>
+                    <h1><i class="fa-regular fa-comments"></i>{t("FaleConnoscoAgora")}</h1>
                     </div>
                     <form action="#" method="post" id="complete-form">
                         <div class="row-form">
@@ -72,7 +74,7 @@ const Contactos = () => {
                                     class="input-slide" 
                                     id="name" 
                                     name="name" 
-                                    placeholder="Nome" 
+                                    placeholder={t("Nome")}
                                     autocomplete="off" 
                                     required=""
                                     value={name}
@@ -86,7 +88,7 @@ const Contactos = () => {
                                     class="input-slide" 
                                     id="country" 
                                     name="country" 
-                                    placeholder="País" 
+                                    placeholder={t("País")} 
                                     autocomplete="off" 
                                     required=""
                                     value={country}
@@ -100,7 +102,7 @@ const Contactos = () => {
                                     class="input-slide" 
                                     id="phone_number" 
                                     name="phone_number"  
-                                    placeholder="Contacto" 
+                                    placeholder={t("Contacto")} 
                                     autocomplete="off" 
                                     required=""
                                     value={phone_number}
@@ -114,7 +116,7 @@ const Contactos = () => {
                                     class="input-slide" 
                                     id="date" 
                                     name="date"  
-                                    placeholder="Data" 
+                                    placeholder={t("Data")}
                                     autocomplete="off" 
                                     required=""
                                     value={date}
@@ -130,7 +132,7 @@ const Contactos = () => {
                                     class="input-slide" 
                                     id="email" 
                                     name="email" 
-                                    placeholder="E-mail" 
+                                    placeholder="e-mail" 
                                     autocomplete="off" 
                                     required=""
                                     value={email}
@@ -144,7 +146,7 @@ const Contactos = () => {
                                     class="input-slide" 
                                     id="object" 
                                     name="object" 
-                                    placeholder="Assunto" 
+                                    placeholder={t("Assunto")} 
                                     autocomplete="off" 
                                     required=""
                                     value={object}
@@ -159,7 +161,7 @@ const Contactos = () => {
                                         id="message" 
                                         name="message" 
                                         rows="3" 
-                                        placeholder="Mensagem" 
+                                        placeholder={t("Mensagem")} 
                                         autocomplete="off" 
                                         required=""
                                         value={message}
@@ -175,7 +177,7 @@ const Contactos = () => {
                                 class="btn-envia zoom-shadow"
                                 onClick={handleSubmit}
                                 >
-                                <i class="fa-regular fa-paper-plane"> Enviar</i>
+                                <i class="fa-regular fa-paper-plane"> {t("Enviar")}</i>
                             </button>
                         </div>
                     </form>

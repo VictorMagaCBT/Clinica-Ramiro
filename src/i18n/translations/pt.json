@@ -17,7 +17,7 @@
         "CirurgiaOrtognatica": "Cirurgia Ortognática",
         "CirurgiaOrtognáticaEUmProcedimento": "A cirurgia ortognática é um procedimento cirúrgico utilizado para corrigir problemas relacionados à posição e alinhamento dos ossos da face e mandíbula.",
         "EssaCirurgiaERealizada": "Essa cirurgia é realizada por um cirurgião maxilofacial e tem como objetivo melhorar tanto a estética quanto a funcionalidade da face.",
-        "CirurgiaDaReabilitaçãoSobreImplantes": "Cirurgia da Reabilitação sobre Implantes",
+        "CirurgiaDaReabilitaçãoSobreImplantes": "Cirurgia de Reabilitação sobre Implantes",
         "AReabilitaçaoSobreImplantesEUmProcedimento": "A cirurgia de reabilitação com implantes é um procedimento odontológico avançado que visa restaurar a função e estética bucal por meio da colocação de implantes dentários. Os implantes são estruturas de titânio inseridas no osso da mandíbula ou maxila para substituir dentes ausentes ou danificados.",
         "SaibaMais": "Saiba mais...",
         "CirurgiaOral": "Cirurgia Oral",
@@ -29,13 +29,127 @@
         "TurismoDaSaude": "Turismo da Saúde",
         "PortugalÉDestinoCrescente":"Portugal é um destino crescente no turismo de saúde, especialmente na área odontológica. A reputação de profissionais qualificados, instalações modernas e custos acessíveis atrai pacientes internacionais em busca de tratamentos dentários de alta qualidade.",
     
-        "Traduction Navbar": "Tradução Navbar",
+        "TraductionForNavbar": "Tradução Navbar",
 
         "Home": "Home",
         "Clinica": "Clínica",
         "Equipa": "Equipa",
         "SobreNos": "Sobre Nós",
         "Serviços": "Serviços",
-        "Contacto": "Contacto"
+        "Contacto": "Contacto",
+
+        "TranslationForClinicPage": "Tradução Navbar",
+
+        "ClinicaDrRamiro": "Clínica Médico Dentária Dr Ramiro Silva",
+        "ÉumVerdadeiroPontoDeReferencia": "A Clínica Dentária do Dr. Ramiro Silva em Celorico de Basto é um verdadeiro ponto de referência no cuidado odontológico local. Com uma história marcada por crescimento constante e excelência em serviços, esta clínica tem se destacado no cenário de saúde bucal da região.",
+        "CrescimentoSustentado": "Crescimento Sustentado",
+        "DesdeASuaFundacao": "Desde sua fundação modesta há alguns anos, a clínica experimentou um crescimento consistente, expandindo suas instalações e equipe. Sendo um reflexo do compromisso incansável do Dr. Ramiro Silva e sua equipa em proporcionar um atendimento odontológico de alta qualidade.",
+        "AtendimentoPersonalizado": "Atendimento personalizado",
+        "OQueRealmenteNosDiferencia": "O que realmente diferencia esta clínica é o atendimento personalizado que oferece a cada paciente. Desde o primeiro contato, os pacientes se sentem acolhidos e compreendidos, criando um ambiente propício para uma relação de confiança mútua.",
+        "TecnologiaDePonta": "Tecnologia de Ponta",
+        "InvesteContinuamente":"A clínica investe continuamente em tecnologia de ponta para garantir procedimentos odontológicos eficazes e confortáveis. Equipamentos modernos e técnicas avançadas são utilizados para proporcionar aos pacientes a melhor experiência possível.",
+        "EquipaExcepcional": "Equipa Excepcional",
+        "CompostaPorProfissionais":" A equipa da clínica é composta por profissionais altamente qualificados e dedicados, que possuem um compromisso inabalável com a saúde bucal dos pacientes. O Dr. Ramiro Silva lidera uma equipe apaixonada que busca sempre o melhor para cada indivíduo que busca seus serviços.",
+        "SatisfaçãoDosPacientes": "Satisfação dos Pacientes",
+        "SatisfaçãoDosPacientesEvidente":"A satisfação dos pacientes é evidente, refletida nas inúmeras histórias de sucesso e nos sorrisos transformados que saem das portas da clínica. Pacientes relatam experiências positivas, destacando a atenção, cuidado e resultados excepcionais obtidos.",
+        "Voltar": "Voltar",
+
+        "TranslationForAboutUsPage": "Tradução para a página da Sobre Nós",
+
+        "SomosMaisQueUmaClinica": "Somos mais que uma clínica",
+        "SomosUmSantuarioDeSaude": " Somos um santuário de saúde bucomaxilofacial, onde cada sorriso é uma obra de arte que merece ser celebrada. Nossa missão é transformar vidas, uma cirurgia de cada vez.",
+        "OsNossosValores": "Os Nossos Valores",
+        "Excelência": "Excelência",
+        "BuscamosAEXcelência":"Buscamos a excelência em cada procedimento, adotando as últimas inovações e técnicas para garantir o melhor para os nossos pacientes.",
+        "CuidadoCompassivo": "Cuidado Compassivo",
+        "AbordagemMoldadaPelaCompaixão": "Nossa abordagem é moldada pela compaixão e empatia. Cada paciente é único e tratamos a todos com a atenção e carinho que merecem.",
+        "ConfiançaTransparência": "Confiança e Transparência",
+        "ConstruimosRelaçõesDeConfiança":"Construímos relações baseadas na confiança, mantendo uma comunicação aberta e transparente com nossos pacientes em todas as etapas do tratamento.",
+        "EducaçãoOrientação": "Educação e Orientação",
+        "AcreditamosQueAEducação":"Acreditamos que a educação é o primeiro passo para a saúde. Guiamos nossos pacientes com informações precisas para que possam fazer escolhas informadas sobre seu tratamento.",
+        "NossoCompromisso": "Nosso Compromisso",
+        "EstamosEmpenhados": "Estamos empenhados em proporcionar a cada paciente uma jornada de tratamento personalizada e transformadora. Desde o momento em que entra em nossa clínica até a completa recuperação, estamos ao seu lado, cuidando de cada detalhe.",
+        "NãoApenasRestaurarSorrisos":"A equipa do Dr. Ramiro Silva, não se preocupa apenas em restaurar sorrisos, mas também renovamos a confiança e a qualidade de vida dos nossos pacientes. A sua saúde bucomaxilofacial é nossa prioridade, e sua satisfação é nossa maior recompensa.",
+        "SintasSeEmCasa":"Sinta-se em casa, pois você está prestes a embarcar em uma jornada de transformação conosco.",
+    
+        "TranslationForHealthTourismPage": "Tradução para a página do Turismo da Saúde",
+
+        "PortugalDestinoroeminente": "Portugal tem emergido como um dos destinos proeminentes no cenário global do turismo de saúde, com sua indústria odontológica ganhando destaque.",
+        "CombinaçãodeProfissionaiQualificados":"A combinação de profissionais altamente qualificados, tecnologia de ponta e um ambiente acolhedor tem atraído pacientes internacionais em busca de tratamentos dentários de excelência.",
+        "OsPacientesDesfrutam":"Os pacientes desfrutam da oportunidade de receber cuidados odontológicos de alta qualidade enquanto exploram a rica herança cultural e paisagens deslumbrantes de Portugal.",
+        "EstamosComprometidosComTratamentosDeExcelência":"Estamos comprometidos em oferecer tratamentos dentários de excelência, garantindo que cada paciente tenha uma experiência positiva e resultados duradouros durante sua estadia em Portugal.",
+        "QueremosFazerParteDaSuaJornada":"Queremos fazer parte da sua jornada em direção a um sorriso saudável e radiante, em um dos destinos mais encantadores para turismo de saúde.",
+    
+        
+        "TranslationForContactPage": "Tradução para a página do Contacto",
+
+        "FaleConnoscoAgora": "Fale Connosco Agora",
+        "Nome": "Nome",
+        "País": "País",
+        "Data":"Data",
+        "Assunto":"Assunto",
+        "Mensagem":"Mensagem",
+        "Enviar":"Enviar",
+
+        "TranslationForOrtognáticaPage": "Tradução para a página de Ortognática",
+
+        "JáImaginouUmSorrisoQueTransforma":"Você já imaginou um sorriso que não apenas ilumina o rosto, mas também transforma a forma como você se sente?",
+        "BemVindoAoMundoDaCirurgiaOrtognática": "Bem-vindo ao mundo da cirurgia ortognática, um incrível campo da odontologia e cirurgia que vai além do simples aprimoramento estético.",
+        "UmaJornadaDeTransformação":"É uma jornada de transformação que não apenas melhora a sua aparência, mas também restaura sua confiança e qualidade de vida.",
+        "ImaginePoderCorrigir":"Imagine poder corrigir aquele desalinhamento facial que sempre o incomodou - seja uma mandíbula que parece fora de lugar, um maxilar desalinhado ou uma mordida que não se encaixa como deveria.",
+        "EssaCirurgiaEntraEmCena":" Essa cirurgia entra em cena quando a ortodontia sozinha não é suficiente para corrigir irregularidades faciais significativas. Em situações onde o alinhamento dos dentes não é o único problema, a cirurgia ortognática oferece uma solução completa. ",
+        "SeSofreComDificuldadeEmMastigar":"Se você sofre com dificuldades para mastigar, falar ou até mesmo respirar devido à sua estrutura facial desalinhada, este procedimento pode ser a resposta para os seus problemas.",
+        "AMaravilhaDaOrtognáticaEstáNaCapacidade":"A maravilha da cirurgia ortognática está em sua capacidade de redefinir e reequilibrar os traços faciais, muitas vezes impactando positivamente a sua respiração, fala e, claro, sua aparência.",
+        "AvançãrOuRecuarMandibulas": "Avançar ou recuar mandíbulas e maxilares, corrigir mordidas abertas ou profundas, alinhar um queixo desalinhado - tudo isso é possível e mais. É uma verdadeira revolução, não apenas para o seu sorriso, mas para a sua autoestima.",
+        "TransformaASuaHistoria": "Por meio dessa cirurgia, você não apenas transforma sua face, mas também transforma sua história.",
+        "JornadaParaUmSorrisoBrilhante":"A sua jornada para um sorriso brilhante e uma vida mais plena está apenas a um passo de distância.",
+        "QuerSaberMais?":"Quer saber mais...?",
+
+        "TranslationForImplnatsPage": "Tradução para a página de Implantes",
+
+        "EmUmMundoOndeInovaçãoEOdontologia":"Em um mundo onde a inovação se encontra com a odontologia, a cirurgia de reabilitação com implantes surge como uma dádiva para aqueles que buscam restaurar sua saúde bucal e a confiança em seu sorriso.",
+        "JornadaMeticulosa":"É uma jornada meticulosa, onde a ciência se une à precisão cirúrgica para reconstruir a harmonia oral.",
+        "ImplantesDentáriosComoPilares":"Imagine implantes dentários como pilares sólidos, incorporados estrategicamente em sua mandíbula.",
+        "SãoAFundação":"Eles são a base, a fundação para futuras reabilitações. ",
+        "ÈUmAtoDeMestria":"A cirurgia é um ato de maestria, onde esses implantes são habilmente colocados, proporcionando um alicerce robusto para os novos dentes que estão por vir.",
+        "MaisDoQueCriarNovoSorriso":" Essa intervenção é mais do que a criação de um novo sorriso; é a restauração da funcionalidade perdida e a reinvenção da estética dental.",
+        "TrazDeVoltaAlegriaDeComer":"A reabilitação traz de volta a alegria de comer, sorrir e falar com naturalidade.",
+        "OptarPorEstaTRansformaçãoAbrePortas":"Ao optar por essa transformação, você está abrindo as portas para uma vida sem limitações, sem preocupações com a integridade de sua dentição. ",
+        "PromesaDeUmaNovaFase":"A cirurgia de reabilitação com implantes é uma promessa de uma nova fase, onde cada mordida é um passo firme em direção à confiança e ao bem-estar.",
+        "EvulçãoDaCienciaEReabilitaçãoImplantes":"A ciência da odontologia evolui e a cirurgia de reabilitação com implantes é um testemunho dessa evolução. ",
+        "BuscaConstanteDeMelhorQualidadeDeVida":"É a busca constante por uma melhor qualidade de vida, onde a inovação se une à experiência para criar sorrisos que perduram.",
+       
+        "TranslationForInclusosPage": "Tradução para a página de Implantes",
+
+        "EnigmaBucal": "Dentes inclusos, um enigma bucal! ",
+        "OsDentesDecidemBrincar": "Às vezes, nossos dentes decidem brincar de esconde-esconde. Imagine um dente que não encontra o caminho certo para sair e decide se aconchegar no osso. É aí que entra a cirurgia para remoção de dentes inclusos",
+        "ExpediçãoOdontológica": "- uma verdadeira expedição odontológica!",
+        "SaoTesourosEscondidos": "Os dentes inclusos são como tesouros escondidos no subsolo da sua boca.",
+        "IncómodosInvisiveisIntrigantes": "Às vezes, são incômodos, às vezes invisíveis, mas sempre intrigantes.",
+        "CirurgiaÈUmJogoDeHahilidade": "A cirurgia é um jogo de habilidade, paciência e precisão, onde os especialistas odontológicos desvendam o enigma, removendo esses dentes teimosos e restaurando o equilíbrio no seu sorriso.",
+        "IntervençaoResolveEnigmaDental": "Ao optar por essa intervenção, você não só resolve um enigma dental, mas também ganha em conforto e saúde bucal. É uma jornada curta, mas cheia de descobertas, trazendo alívio e permitindo que seu sorriso brilhe sem obstáculos. Então, vamos desvendar juntos o mistério dos dentes inclusos e revelar um sorriso radiante!",
+       
+        "TranslationForCistosPage": "Tradução para a página de Cistos",
+
+        "QuandoOSilencioDaBocaEscondeDesafios": "Quando o silêncio da boca esconde um desafio - cistos, intrusos indesejados que podem surgir sem aviso. ",
+        "NecessidadeSeria": "É nesses momentos que a cirurgia para remoção de cistos na boca se torna uma necessidade séria, uma solução eficaz para restaurar a saúde oral.",
+        "ConvidadosIndesejados": "Os cistos bucais podem ser comparados a convidados indesejados que se alojam silenciosamente.",
+        "CirurgiaParaErradicarEsseProblema": "A cirurgia emerge como o remédio necessário, com especialistas dentais utilizando suas habilidades e conhecimento para investigar e erradicar esses problemas.",
+        "AbordagemFocadaMeticulosa": " É uma abordagem focada e meticulosa, voltada para a restauração do bem-estar bucal.",
+        "SaudeBucalNosTrilhos": " Ao optar por essa intervenção, você não apenas resolve a questão do cisto, mas também coloca sua saúde bucal de volta nos trilhos.",
+        "DemandaPrecisaoMasAlivioDuradouro": "É um processo que demanda precisão, mas que oferece alívio duradouro e permite que seu sorriso recupere sua luminosidade.",
+
+        "TranslationForCirurgiaOralPage": "Tradução para a página de Cistos",
+
+        "NossaBocaPedeIntervençao": "Às vezes, nossa boca pede uma intervenção.",
+        "CirurgiaOralÉResposta": "A cirurgia oral é a resposta, um campo onde a ciência se torna arte, resolvendo questões de saúde e estética bucais.",
+        "ImagineUmLaboratorio": "Imagine-a como um laboratório, onde os especialistas dentais são os pesquisadores e você, o paciente. ",
+        "ExtraçaoDeDentesEnxertosOsseos": "Aqui, extração de dentes, enxertos ósseos e remoção de lesões ganham soluções.",
+        "ProcessoEstruturado": "É um processo estruturado, onde cada etapa é meticulosamente planejada para garantir um sorriso saudável.",
+        "SaoReparosMelhorias": "Essas intervenções não são apenas reparos; são melhorias, com o objetivo de aprimorar saúde e bem-estar.",
+        "UmNovoCapituloNaSaudeBucal": " Ao escolher essa abordagem, você está moldando um novo capítulo para sua saúde bucal, com os cirurgiões orais como os facilitadores, ajustando e otimizando cada detalhe.",
+        "PromessaDeSorrisoRenovado": "A cirurgia oral é a promessa de um sorriso renovado e a garantia de uma boca funcional.",
+        "ConfiançaGanhaDestaque": "É um caminho de progresso, onde a confiança ganha destaque e a vitalidade é o objetivo."
+
     }
 }

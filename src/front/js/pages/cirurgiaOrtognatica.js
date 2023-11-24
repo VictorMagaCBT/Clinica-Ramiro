@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 
 
@@ -9,33 +10,31 @@ import { useNavigate } from "react-router-dom";
 
 const CirurgiaOrtognatica = () => {
     const navigate = useNavigate();
+    const {t} = useTranslation()
     
     return (
         <div className="content-ortognatica">
-            <h1 className="cirurgiaOrtognática mt-5 text-center">Cirurgia Ortognatica</h1>
+            <h1 className="cirurgiaOrtognática mt-5 text-center">{t("CirurgiaOrtognatica")}</h1>
             <div className="introductionOrtognatica">
                 <div className="introducaoImageOrtognatica">
                     <img src="https://i.ibb.co/4ZwPkJN/sorriso-feliz.jpg" alt="sorriso-feliz" border="0"/>
                 </div>
                 <p className="introductionTextOrtognatica">
-                    Você já imaginou um sorriso que não apenas ilumina o rosto, mas também transforma a forma como você se sente? 
-                    <br/><br/>
-                    Bem-vindo ao mundo da cirurgia ortognática, um incrível campo da odontologia e cirurgia que vai além do simples aprimoramento estético.
-                    <br/><br/>
-                    É uma jornada de transformação que não apenas melhora a sua aparência, mas também restaura sua confiança e qualidade de vida.
+                    {t("JáImaginouUmSorrisoQueTransforma")}
+                        <br/><br/>
+                    {t("BemVindoAoMundoDaCirurgiaOrtognática")}
+                        <br/><br/>
+                    {t("UmaJornadaDeTransformação")}
                 </p>
             </div>
             <div className="esqueletoPart">
                 <div className="cirurgiaText">
                     <p>
-                        Imagine poder corrigir aquele desalinhamento facial que sempre o incomodou - seja uma mandíbula que parece fora de lugar, 
-                        um maxilar desalinhado ou uma mordida que não se encaixa como deveria.
-                        <br/><br/>
-                        Essa cirurgia entra em cena quando a ortodontia sozinha não é suficiente para corrigir irregularidades faciais significativas.
-                        Em situações onde o alinhamento dos dentes não é o único problema, a cirurgia ortognática oferece uma solução completa. 
-                        <br/><br/>
-                        Se você sofre com dificuldades para mastigar, falar ou até mesmo respirar devido à sua estrutura facial desalinhada, 
-                        este procedimento pode ser a resposta para os seus problemas.
+                        {t("ImaginePoderCorrigir")}
+                            <br/><br/>
+                        {t("EssaCirurgiaEntraEmCena")}
+                            <br/><br/>
+                        {t("SeSofreComDificuldadeEmMastigar")}
                     </p>
                 </div>
                 <div className="esqueletoImage">
@@ -62,24 +61,21 @@ const CirurgiaOrtognatica = () => {
             </div>
             <div className="finalTextOrtognatica">
                 <p className="cirurgia-text2">
-                    A maravilha da cirurgia ortognática está em sua capacidade de redefinir e reequilibrar os 
-                    traços faciais, muitas vezes impactando positivamente a sua respiração, fala e, claro, sua
-                    aparência. 
+                    {t("AMaravilhaDaOrtognáticaEstáNaCapacidade")}
                         <br/>
-                    Avançar ou recuar mandíbulas e maxilares, corrigir mordidas abertas ou profundas, alinhar 
-                    um queixo desalinhado - tudo isso é possível e mais. É uma verdadeira revolução, não apenas
-                    para o seu sorriso, mas para a sua autoestima.
+                    {t("AvançãrOuRecuarMandibulas")}
                 </p>
                 <p className="cirurgia-text4">
-                    Por meio dessa cirurgia, você não apenas transforma sua face, mas também transforma sua história.
+                    {t("TransformaASuaHistoria")}
                         <br/>
-                    A sua jornada para um sorriso brilhante e uma vida mais plena está apenas a um passo de distância.</p>
+                    {t("JornadaParaUmSorrisoBrilhante")}
+                </p>
             </div>
             <div className="moreInfo">
                 <button className="btnOrtognatica" 
                 data-toggle="modal" 
                 data-target="#exampleModalCenter"
-                onClick={() => navigate("/contactos")}>Quer saber mais...?</button>
+                onClick={() => navigate("/contactos")}>{t("QuerSaberMais?")}</button>
             </div>
         </div>
 

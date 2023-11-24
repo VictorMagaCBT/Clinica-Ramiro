@@ -11,9 +11,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	const {t} = useTranslation();
-	console.log("Translation for 'Bem-vindo':", t("Bem-vindo"));
-    console.log("Translation for 'Desejamos-lhe':", t("Desejamos-lhe"));
-
+	
 	return (
 		<div className="fullContent">
 			<div className="imageUnderNav">
