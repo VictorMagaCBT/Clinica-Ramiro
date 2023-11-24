@@ -5,13 +5,9 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
-body{
-    background-color:rgb(158, 209, 228);
-}
+
 
 .fullContent{
-    margin-left: 5%;
-    margin-right: 5%;
     margin-top: 5%;
     height: 100%;
     display: flex;
@@ -22,6 +18,8 @@ body{
     width: 100%;
     height: 450px;
     position: relative;
+    overflow:visible;
+    align-self: center;
     margin-bottom: 75px;
 }
 .imageUnderNav img{
@@ -36,6 +34,7 @@ body{
     height: 75vh;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-inline: 5%;
 }
 .welcomeMsg{
     width: 45%;
@@ -66,7 +65,7 @@ body{
 .divider{
     width: 100%;
     height: 45vh;
-    background-image: url(https://i.ibb.co/31rhchF/clinica-ramiro.jpg);
+    background-image: url("https://i.ibb.co/x5PJpHt/8954745-1932-min.jpg");
     /*background-image: url(https://i.ibb.co/cJkfnkz/separador-home.jpg);*/
     margin-top: 50px;
     margin-bottom: 50px;
@@ -103,6 +102,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 600px;
+    margin-inline: 5%;
 }
 .card-body{
     display: flex;
@@ -113,15 +113,35 @@ body{
 .card{
     border: none;
     width: 450px;
-    margin: 5px;
+    margin-inline: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow:hidden;
 }
+
+.textAndButtonOrtognatica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    margin-top: 20px;
+}
+.textAndButtonOrtognatica button{
+    width: 30%;
+}
+.textOrtognática{
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
 .card-text{
-    font-size: 1.7vh;
-    text-align: center;
+    font-size: 2vh;
+    text-align: justify;
     margin-top: 20px;
 }
 h3 {
@@ -146,14 +166,6 @@ h3:hover{
     height: 100%;
     margin-inline: 20px;
 }
-#cardOrtognatica img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    overflow:hidden;
-    border-radius: 20px;
-}
-
 #remocaoSisos img, #quistos img, #oral img, #reabilitacaoImplantes img{
     width: 100%;
     height: 300px;
@@ -175,6 +187,8 @@ h3:hover{
     font-weight: bold;
     cursor: pointer;
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .lineDivider{
     width: 100%;
@@ -190,6 +204,7 @@ h3:hover{
     justify-content: space-between;
     align-items: center;
     height: 500px;
+    margin-inline: 5%;
 }
 .row-tourismHome img{
     width: 80%;
@@ -210,6 +225,9 @@ h3:hover{
 @media (max-width: 800px){
     .fullContent{
         margin-top: 30px;
+    }
+    .firstRowHome{
+        margin-top: 0;
     }
     #secondCardRow{
         flex-direction: column;
@@ -278,7 +296,6 @@ h3:hover{
         overflow:hidden;
     }
     .card-group{
-        margin-top: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -286,6 +303,7 @@ h3:hover{
         margin-bottom: 0;
         width: 100%;
         height: 100%;
+        margin-top: 0;
     }
     #cardOrtognatica, #quistos, #oral{
         background-color: rgb(204, 214, 226);
@@ -311,16 +329,16 @@ h3:hover{
         align-items: center;
         height: 100%;
     }
+    .firstCardRow{
+        margin-top: 0;
+    }
     .btn{
-        border: none;
-        border-radius: 20px;
-        width: 80%;
-        background-color: rgb(50, 50, 231);
-        color: white;
-        font-size: 3.2vh;
-        font-weight: bold;
-        cursor: pointer;
-        align-self: center;
+        width: 60%;
+        font-size: 3vh;
+        margin-top: 15px;
+    }
+    .textOrtognática{
+        margin-bottom: 0;
     }
     .row-tourismHome{
         display: flex;
@@ -341,11 +359,7 @@ h3:hover{
     h3 {
         padding-block: 15px;
     }
-    .btn{
-        border: none;
-        border-radius: 20px;
-        height: 50px;
-        width: 100%;
-        font-size: 3vh;
+    .textAndButtonOrtognatica button{
+        width: 60%;
     }
 }

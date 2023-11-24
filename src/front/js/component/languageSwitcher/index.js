@@ -1,6 +1,6 @@
 
 import {useTranslation} from "react-i18next";
-import React, { useState, useRef} from "react";
+import React, { useState, useRef, useEffect} from "react";
 import pt from "./flag/pt.png";
 import fr from "./flag/fr.png";
 import en from "./flag/en.png";
@@ -23,21 +23,41 @@ const LanguageOptions = [
         flag: en
     }
 ]
+
 export const LanguageSwitcher = () => {
     const {t, i18n} = useTranslation();
     const [selectedLanguage, setSelectedLanguage] = useState({ name: "PT", flag: pt });
     const dropdownRef = useRef();
 
+    useEffect(() => {
+        // Tente obter a preferência do idioma armazenada no localStorage
+        const storedLanguage = localStorage.getItem("selectedLanguage");
+    
+        // Se a preferência do idioma existir no localStorage, aplique-a
+        if (storedLanguage) {
+          const parsedLanguage = JSON.parse(storedLanguage);
+          i18n.changeLanguage(parsedLanguage.value);
+          setSelectedLanguage(parsedLanguage);
+        } else {
+          // Caso contrário, use o idioma padrão (pode ser o primeiro da sua lista)
+          const defaultLanguage = LanguageOptions[0];
+          i18n.changeLanguage(defaultLanguage.value);
+          setSelectedLanguage(defaultLanguage);
+        }
+      }, [i18n]);
 
     const handleLanguageChange = (language) => {
         i18n.changeLanguage(language.value);
         setSelectedLanguage(language);
+        localStorage.setItem("selectedLanguage", JSON.stringify(language));
 
         if (dropdownRef.current) {
             const bootstrapDropdown = new window.bootstrap.Dropdown(dropdownRef.current);
             bootstrapDropdown.hide();
         }
     };
+
+
 
     return (
         <div className="btn-group dropdown d-flex flex-wrap" id="language">

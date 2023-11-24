@@ -53,25 +53,40 @@ export const Home = () => {
 			<div className="divider">
 				<div className="dividerText">{t("Especialidades")}</div>
 			</div>
-			
-		
-			<div class="card-group d-flex flex-wrap justify-content-around">
-				<div class="card" id="cardOrtognatica">
-					<h3 class="card-title text-center">{t("CirurgiaOrtognatica")}</h3>
-						<img 
-							src="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" 
-							alt="Imagem-9-sem-Identidade-min" 
-							border="0"
-						/>
-					<div class="card-body">
-						<p class="card-text">
-							{t("CirurgiaOrtognáticaEUmProcedimento")}
-								<br/><br/>
-							{t("EssaCirurgiaERealizada")}
-						</p>
-						<button type="button" class="btn btn-primary" onClick={() => navigate ("/ortognatica")}>{t("SaibaMais")}</button>
+			<div className="rowOrtognatica">
+				<h3 class="card-title text-center">{t("CirurgiaOrtognatica")}</h3>
+				<div className="photosOrtognatica">
+					<div className="exemplo-image1">
+						<a href="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" target="_blank">
+							<img src="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" alt="Imagem-9-sem-Identidade-min" border="0"/>
+						</a>
+					</div>
+					<div className="exemplo-image2">
+						<a href="https://i.ibb.co/C0MVHjM/Imagem-7-Incognita-min.jpg" target="_blank">
+							<img src="https://i.ibb.co/C0MVHjM/Imagem-7-Incognita-min.jpg" alt="Imagem-7-Incognita-min" border="0"/>
+						</a>
+					
+					</div>
+					<div className="exemplo-image3">
+						<a href="https://i.ibb.co/K7PJTH0/Imagem-11-Inc-gnita-min.jpg" target="_blank">
+						<img src="https://i.ibb.co/K7PJTH0/Imagem-11-Inc-gnita-min.jpg" alt="Imagem-11-Inc-gnita-min" border="0"/>
+						</a>
 					</div>
 				</div>
+
+				<div class="textAndButtonOrtognatica">
+					<p class="textOrtognatica">
+						{t("CirurgiaOrtognáticaEUmProcedimento")}
+							<br/><br/>
+						{t("EssaCirurgiaERealizada")}
+					</p>
+					<button type="button" class="btn" onClick={() => navigate ("/ortognatica")}>{t("SaibaMais")}</button>
+				</div>
+				
+			</div>
+		
+			<div class="card-group d-flex flex-wrap justify-content-around" id="firstCardRow">
+				
 				<div class="card" id="reabilitacaoImplantes" >
 					<h3 class="card-title text-center">{t("CirurgiaDaReabilitaçãoSobreImplantes")}</h3>
 						<img src="https://i.ibb.co/86M3sPT/imagem-implantes-3d.webp" alt="imagem-implantes-3d" border="0"/>
@@ -81,9 +96,6 @@ export const Home = () => {
 					</div>
 				</div>
 				
-				</div>
-
-				<div class="card-group d-flex flex-wrap justify-content-around" id="secondCardRow">
 				<div class="card" id="oral">
 					<h3 class="card-title text-center">{t("CirurgiaOral")}</h3>
 						<img src="https://i.ibb.co/smjCq5h/Imagem-21.jpg" alt="Imagem-21" border="0"/>
@@ -92,6 +104,11 @@ export const Home = () => {
 						<button type="button" class="btn btn-primary" onClick={() => navigate ("/cirurgia-oral")}>{t("SaibaMais")}</button>
 					</div>
 				</div>
+
+			</div>
+
+			<div class="card-group d-flex flex-wrap justify-content-around" id="secondCardRow">
+				
 				<div class="card" id="remocaoSisos">
 					<h3 class="card-title text-center">{t("RemoçãoDentesInclusos")}</h3>
 						<img src="https://i.ibb.co/h9R2kxx/siso-3d2.webp" alt="siso-3d2" border="0"/>
@@ -109,8 +126,10 @@ export const Home = () => {
 					</div>
 				</div>
 				
-				</div>
+			</div>
+
 			<div className="lineDivider"></div>
+
 			<div className="row-tourismHome">
 				<img src="https://i.ibb.co/7kYbHMs/medical-tourism.jpg" alt="medical-tourism" border="0"/>
 				<div className="tourism-content">
