@@ -38,7 +38,7 @@ export const Navbar = () => {
 					id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navbarLinks">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="/">{t("Home")}</a>
+							<a class="nav-link" aria-current="page" href="/">{t("Home")}</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#" onClick={() => { handleNavLinkClick(); navigate("/clinica"); }}>{t("Clinica")}</a>
@@ -49,12 +49,14 @@ export const Navbar = () => {
 						<li class="nav-item">
 							<a class="nav-link" href="#" onClick={() => { handleNavLinkClick(); navigate("/sobreNos"); }}>{t("SobreNos")}</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="ortognaticaNavbar" href="#" onClick={() => { handleNavLinkClick(); navigate("/ortognatica"); }}>{t("CirurgiaOrtognatica")}</a>
+						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								{t("Serviços")}
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#" onClick={() => { handleNavLinkClick(); navigate("/ortognatica"); }}>{t("CirurgiaOrtognatica")}</a></li>
 								<li><a class="dropdown-item" href="#" onClick={() => { handleNavLinkClick(); navigate("/remocao-sisos"); }}>{t("RemoçãoDentesInclusos")}</a></li>
 								<li><a class="dropdown-item" href="#" onClick={() => { handleNavLinkClick(); navigate("/remocao-quistos"); }}>{t("RemoçãoDeQuistos")}</a></li>
 								<li><a class="dropdown-item" href="#" onClick={() => { handleNavLinkClick(); navigate("/cirurgia-oral"); }}>{t("CirurgiaOral")}</a></li>

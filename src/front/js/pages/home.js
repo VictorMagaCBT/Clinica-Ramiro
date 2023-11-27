@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ImageRotator from "../component/imageRotator";
 
 
 import "../../styles/home.css";
@@ -11,6 +12,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	const {t} = useTranslation();
+
 	
 	return (
 		<div className="fullContent">
@@ -55,25 +57,7 @@ export const Home = () => {
 			</div>
 			<div className="rowOrtognatica">
 				<h3 class="card-title text-center">{t("CirurgiaOrtognatica")}</h3>
-				<div className="photosOrtognatica">
-					<div className="exemplo-image1">
-						<a href="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" target="_blank">
-							<img src="https://i.ibb.co/XXN5N9p/Imagem-9-sem-Identidade-min.png" alt="Imagem-9-sem-Identidade-min" border="0"/>
-						</a>
-					</div>
-					<div className="exemplo-image2">
-						<a href="https://i.ibb.co/C0MVHjM/Imagem-7-Incognita-min.jpg" target="_blank">
-							<img src="https://i.ibb.co/C0MVHjM/Imagem-7-Incognita-min.jpg" alt="Imagem-7-Incognita-min" border="0"/>
-						</a>
-					
-					</div>
-					<div className="exemplo-image3">
-						<a href="https://i.ibb.co/K7PJTH0/Imagem-11-Inc-gnita-min.jpg" target="_blank">
-						<img src="https://i.ibb.co/K7PJTH0/Imagem-11-Inc-gnita-min.jpg" alt="Imagem-11-Inc-gnita-min" border="0"/>
-						</a>
-					</div>
-				</div>
-
+					<ImageRotator />
 				<div class="textAndButtonOrtognatica">
 					<p class="textOrtognatica">
 						{t("CirurgiaOrtognáticaEUmProcedimento")}

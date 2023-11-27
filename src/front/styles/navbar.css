@@ -4,6 +4,7 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5px;
+    font-size: 2.3vh;
 }
 #navbarLinks{
     overflow-y: visible;
@@ -26,7 +27,22 @@
     background-color: transparent;
     margin: 5px;
     left: 0;
-    
+}
+#ortognaticaNavbar{
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(128, 128, 184)!important;
+    background-image: url(https://i.ibb.co/hfvfX4m/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    left: 0;
+}
+#ortognaticaNavbar:hover{
+    background-color: rgb(128, 128, 184)!important;
+    opacity: 80%;
+    transform: scale(1.1);
 }
 .btn-navbar::after {
     display: none;
@@ -103,6 +119,11 @@
         background-color: #080707;
         border-color: white;
         color:white;
+    }
+    #ortognaticaNavbar{
+        width: 100px;
+        border-radius: 0;
+        padding: 3px;
     }
     #navbarBrand{
         width: 12vh;
