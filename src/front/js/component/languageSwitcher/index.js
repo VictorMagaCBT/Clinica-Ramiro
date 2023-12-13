@@ -38,13 +38,30 @@ export const LanguageSwitcher = () => {
           const parsedLanguage = JSON.parse(storedLanguage);
           i18n.changeLanguage(parsedLanguage.value);
           setSelectedLanguage(parsedLanguage);
+          const currentLanguageIndex = LanguageOptions.findIndex((language) => language.value === parsedLanguage.value);
+          setSelectedLanguage(LanguageOptions[currentLanguageIndex]);
+          
         } else {
           // Caso contrário, use o idioma padrão (pode ser o primeiro da sua lista)
           const defaultLanguage = LanguageOptions[0];
           i18n.changeLanguage(defaultLanguage.value);
           setSelectedLanguage(defaultLanguage);
         }
-      }, [i18n]);
+      }, []);
+    
+    useEffect(() => {
+    // Get the current language from i18n.languages
+        const currentLanguages = i18n.languages;
+        // Find the selectedLanguage in the list of currentLanguages
+        const selectedLanguageIndex = currentLanguages.findIndex((language) => language.value === selectedLanguage.value);
+        // Set the selectedLanguage to the selectedLanguageIndex
+        setSelectedLanguage(currentLanguages[selectedLanguageIndex]);
+
+        if (dropdownRef.current) {
+            const bootstrapDropdown = new window.bootstrap.Dropdown(dropdownRef.current);
+            bootstrapDropdown.hide();
+        }
+    }, [i18n]);
 
     const handleLanguageChange = (language) => {
         i18n.changeLanguage(language.value);

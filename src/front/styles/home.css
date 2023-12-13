@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .imageUnderNav{
     width: 100%;
@@ -35,6 +36,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     margin-inline: 5%;
+    font-size: 2.2vh;
 }
 .welcomeMsg{
     width: 45%;
@@ -65,8 +67,7 @@
 .divider{
     width: 100%;
     height: 45vh;
-    background-image: url("https://i.ibb.co/x5PJpHt/8954745-1932-min.jpg");
-    /*background-image: url(https://i.ibb.co/cJkfnkz/separador-home.jpg);*/
+    background: linear-gradient(to bottom, #3498db, #ffffff);
     margin-top: 50px;
     margin-bottom: 50px;
     background-size: cover;
@@ -95,7 +96,7 @@
 }
 
 .card-group{
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
@@ -112,7 +113,6 @@
 }
 .card{
     border: none;
-    width: 450px;
     margin-inline: 10px;
     width: 100%;
     height: 100%;
@@ -120,10 +120,15 @@
     overflow:hidden;
 }
 .rowOrtognatica{
-    background-image: url("https://i.ibb.co/YXckzNK/v915-wit-001-d.jpg");
+    /*background-image: url("https://i.ibb.co/YXckzNK/v915-wit-001-d.jpg");*/
     height: 100%;
-    width: 100%;
+    color: black;
     padding-bottom: 25px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    margin-inline: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .textAndButtonOrtognatica{
     display: flex;
@@ -135,6 +140,7 @@
 }
 .textAndButtonOrtognatica button{
     width: 30%;
+    margin-block: 20px;
 }
 .textOrtognática{
     display: flex;
@@ -162,21 +168,24 @@ h3:hover{
 .lineUnderName:hover{
     transform: none;
 }
+
 #oral, #reabilitacaoImplantes{
     display: flex;
     width: 60%;
     margin: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-#cardOrtognatica, #oral, #quistos{
+#remocaoSisos, #quistos{
     height: 100%;
     margin-inline: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 #remocaoSisos img, #quistos img, #oral img, #reabilitacaoImplantes img{
     width: 100%;
     height: 300px;
     object-fit: cover;
     overflow:hidden;
-    border-radius: 20px;
+    border-radius: 0;
 }
 .btn{
     border: none;
@@ -225,6 +234,13 @@ h3:hover{
     justify-content: center;
     text-align: center;
     margin-left: 20px;
+}
+.whatsapp{
+    bottom: 40px;
+    right: 30px;
+    position:fixed;
+    z-index: 1;
+    background-color: transparent;
 }
 
 @media (max-width: 800px){

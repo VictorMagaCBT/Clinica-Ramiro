@@ -1,19 +1,18 @@
-import React, { useContext } from "react";
-import { Context } from "../store/appContext";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import WhatsAppButton from "../component/whatsappButton/whatsapp";
+
 import ImageRotator from "../component/imageRotator";
 
 
 import "../../styles/home.css";
 
-export const Home = () => {
-	const navigate = useNavigate();
-	const { store, actions } = useContext(Context);
+const Home = () => {
 
+	const navigate = useNavigate();
 	const {t} = useTranslation();
 
-	
 	return (
 		<div className="fullContent">
 			<div className="imageUnderNav">
@@ -57,7 +56,9 @@ export const Home = () => {
 			</div>
 			<div className="rowOrtognatica">
 				<h3 class="card-title text-center">{t("CirurgiaOrtognatica")}</h3>
+				<div className="photosOrtognatica">
 					<ImageRotator />
+			</div>
 				<div class="textAndButtonOrtognatica">
 					<p class="textOrtognatica">
 						{t("CirurgiaOrtognáticaEUmProcedimento")}
@@ -125,6 +126,11 @@ export const Home = () => {
 				</div>
 			</div>
 			
+			<div className="whatsapp">
+				<WhatsAppButton />
+			</div>
 		</div>
 	);
 };
+
+export default Home;

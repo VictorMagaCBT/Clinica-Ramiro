@@ -10,7 +10,15 @@
     overflow-y: visible;
     display: flex;
     flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
     position:relative;
+}
+.nav-item{
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
 }
 #navbarBrand{
     width: 130px;
@@ -26,7 +34,13 @@
     width: 30px;
     background-color: transparent;
     margin: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
     left: 0;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 }
 #ortognaticaNavbar{
     width: 100%;
@@ -37,6 +51,8 @@
     background-position: center;
     background-repeat: no-repeat;
     color:white;
+    margin-right: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     left: 0;
 }
 #ortognaticaNavbar:hover{
@@ -53,15 +69,15 @@
 #language button{
     width: 100%;
     background-color: transparent;
-    align-items: end;
+    margin-top: 5px;
     border: none;
-    margin-top: 2px;
+    
 }
 #language img{
     width: 100%;
     background-color: transparent;
     object-fit: cover;
-    margin:5px;
+    margin-left: 7px;
 }
 #language button:hover{
     transform: scale(1.2);
@@ -69,7 +85,9 @@
     border: none;
     top: 0;
 }
-
+.dropdown-toggle::after {
+    content: none;
+}
 #dropdownMaps{
     justify-content: center;
     align-items: center;

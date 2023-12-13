@@ -34,7 +34,7 @@ export const Navbar = () => {
 						<GiHamburgerMenu className="reactIcon" size="30px" />
 					</span>
 				</button>
-				<div className={`collapse navbar-collapse justify-content-end${isNavOpen ? ' show' : ''}`} 
+				<div className={`collapse navbar-collapse justify-content-end ${isNavOpen ? ' show' : ''}`} 
 					id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navbarLinks">
 						<li class="nav-item">
@@ -72,8 +72,8 @@ export const Navbar = () => {
 						<li class="nav-item">
 							<a class="nav-link" href="#" onClick={() =>{ handleNavLinkClick(); navigate("/blog"); }}>Blog</a>
 						</li>
-						<li class="nav-item">
-							<li className="nav-item languageSwitcher">
+						<li class="nav-item languageSwitcher">
+							<li className="switcher">
 								<LanguageSwitcher />
 							</li>
 						</li>
