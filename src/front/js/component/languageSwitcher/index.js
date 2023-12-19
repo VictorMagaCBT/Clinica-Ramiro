@@ -27,46 +27,33 @@ const LanguageOptions = [
 export const LanguageSwitcher = () => {
     const {t, i18n} = useTranslation();
     const [selectedLanguage, setSelectedLanguage] = useState({ name: "PT", flag: pt });
+
     const dropdownRef = useRef();
 
-    useEffect(() => {
-        // Tente obter a preferência do idioma armazenada no localStorage
-        const storedLanguage = localStorage.getItem("selectedLanguage");
-    
-        // Se a preferência do idioma existir no localStorage, aplique-a
-        if (storedLanguage) {
-          const parsedLanguage = JSON.parse(storedLanguage);
-          i18n.changeLanguage(parsedLanguage.value);
-          setSelectedLanguage(parsedLanguage);
-          const currentLanguageIndex = LanguageOptions.findIndex((language) => language.value === parsedLanguage.value);
-          setSelectedLanguage(LanguageOptions[currentLanguageIndex]);
-          
-        } else {
-          // Caso contrário, use o idioma padrão (pode ser o primeiro da sua lista)
-          const defaultLanguage = LanguageOptions[0];
-          i18n.changeLanguage(defaultLanguage.value);
-          setSelectedLanguage(defaultLanguage);
-        }
-      }, []);
-    
-    useEffect(() => {
-    // Get the current language from i18n.languages
-        const currentLanguages = i18n.languages;
-        // Find the selectedLanguage in the list of currentLanguages
-        const selectedLanguageIndex = currentLanguages.findIndex((language) => language.value === selectedLanguage.value);
-        // Set the selectedLanguage to the selectedLanguageIndex
-        setSelectedLanguage(currentLanguages[selectedLanguageIndex]);
+   
 
-        if (dropdownRef.current) {
-            const bootstrapDropdown = new window.bootstrap.Dropdown(dropdownRef.current);
-            bootstrapDropdown.hide();
-        }
-    }, [i18n]);
+    useEffect(() => {;
+        // Tente obter a preferência do idioma armazenada no localStorage
+            const storedLanguage = localStorage.getItem("selectedLanguage");
+        
+            // Se a preferência do idioma existir no localStorage, aplique-a
+            if (storedLanguage) {
+            const parsedLanguage = JSON.parse(storedLanguage);
+            i18n.changeLanguage(parsedLanguage.value);
+            setSelectedLanguage(parsedLanguage);
+            } 
+
+            const defaultLanguage = LanguageOptions[0];
+            i18n.changeLanguage(defaultLanguage.value);
+            localStorage.setItem("selectedLanguage", JSON.stringify(defaultLanguage));
+    
+      }, [i18n]);
+
 
     const handleLanguageChange = (language) => {
+        console.log("handleLanguageChange: language", language);
         i18n.changeLanguage(language.value);
         setSelectedLanguage(language);
-        localStorage.setItem("selectedLanguage", JSON.stringify(language));
 
         if (dropdownRef.current) {
             const bootstrapDropdown = new window.bootstrap.Dropdown(dropdownRef.current);

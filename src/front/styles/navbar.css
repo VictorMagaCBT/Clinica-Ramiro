@@ -5,6 +5,7 @@
     margin-right: 5%;
     margin-top: 5px;
     font-size: 2.3vh;
+    font-family: 'Dosis', sans-serif;
 }
 #navbarLinks{
     overflow-y: visible;
@@ -71,7 +72,6 @@
     background-color: transparent;
     margin-top: 5px;
     border: none;
-    
 }
 #language img{
     width: 100%;
@@ -122,6 +122,7 @@
     #navbarLinks{
         padding: 10px;
         margin-top: 30px;
+        width: 100%;
         overflow-y: visible;
         display: flex;
         flex-direction: column;
@@ -139,8 +140,10 @@
         color:white;
     }
     #ortognaticaNavbar{
-        width: 100px;
+        width: 100%;
         border-radius: 0;
+        border-radius: 15px;
+        margin-inline: auto;
         padding: 3px;
     }
     #navbarBrand{
@@ -161,5 +164,23 @@
     
     #dropdownMaps{
         margin-left: -10px;
+    }
+    .nav-item{
+        margin-block: 10px;
+        text-align: center;
+        justify-content: center;
+        width: 250px;
+    }
+    .languageSwitcher{
+        width: 30px;
+        background-color: transparent;
+        margin: 5px;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+        left: 0;
+        box-shadow: none !important;
+        border-radius: 0 !important;
     }
 }

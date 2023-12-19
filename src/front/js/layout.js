@@ -5,6 +5,7 @@ import { BackendURL } from "./component/backendURL";
 
 import Home from "./pages/home";
 import injectContext from "./store/appContext";
+import Equipa from "./pages/equipa";
 import CirurgiaOrtognatica from "./pages/cirurgiaOrtognatica";
 import Contactos from "./pages/contacto";
 import Oral from "./pages/oral";
@@ -38,6 +39,7 @@ const Layout = () => {
                         <Route element={<CirurgiaOrtognatica />} path="/ortognatica" />
                         <Route element={<SobreNos />} path="/sobreNos" />
                         <Route element={<Clinica />} path="/clinica" />
+                        <Route element={<Equipa />} path="/equipa" />
                         <Route element={<TurismoDaSaude />} path="/turismo-da-saude" />
                         <Route element={<RemocaoSisos />} path="/remocao-sisos" />
                         <Route element={<RemocaoQuistos />} path="/remocao-quistos" />

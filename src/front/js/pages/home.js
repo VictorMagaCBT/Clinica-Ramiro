@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import WhatsAppButton from "../component/whatsappButton/whatsapp";
-
 import ImageRotator from "../component/imageRotator";
+
 
 
 import "../../styles/home.css";
@@ -55,15 +55,18 @@ const Home = () => {
 				<div className="dividerText">{t("Especialidades")}</div>
 			</div>
 			<div className="rowOrtognatica">
-				<h3 class="card-title text-center">{t("CirurgiaOrtognatica")}</h3>
+				<h2 class="card-title text-center">{t("CirurgiaOrtognatica")}</h2>
 				<div className="photosOrtognatica">
 					<ImageRotator />
 			</div>
 				<div class="textAndButtonOrtognatica">
 					<p class="textOrtognatica">
-						{t("CirurgiaOrtognáticaEUmProcedimento")}
+							<br/>
+						{t("MuitosProcuramPelaEstética")}
 							<br/><br/>
-						{t("EssaCirurgiaERealizada")}
+						{t("MuitoMaisQueMelhoriaNaEstética")}
+							<br/><br/>
+						{t("ProcesoComplexoDesdeDiagnostico")}
 					</p>
 					<button type="button" class="btn" onClick={() => navigate ("/ortognatica")}>{t("SaibaMais")}</button>
 				</div>

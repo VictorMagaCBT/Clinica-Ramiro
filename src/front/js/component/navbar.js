@@ -44,7 +44,7 @@ export const Navbar = () => {
 							<a class="nav-link" href="#" onClick={() => { handleNavLinkClick(); navigate("/clinica"); }}>{t("Clinica")}</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">{t("Equipa")}</a>
+							<a class="nav-link" href="#" onClick={() => { handleNavLinkClick(); navigate("/equipa"); }}>{t("Equipa")}</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#" onClick={() => { handleNavLinkClick(); navigate("/sobreNos"); }}>{t("SobreNos")}</a>

@@ -35,10 +35,10 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="back">
-                        <button type="button" class="buttonBack" onClick={() => navigate ("/")}>{t("Voltar")}</button>
-                    </div>
                 </div>
+            <div className="back">
+                <button type="button" class="buttonBack" onClick={() => navigate ("/")}>{t("Voltar")}</button>
+            </div>
         </div>
     );
 };

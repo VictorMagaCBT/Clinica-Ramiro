@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
+    font-family: 'Dosis', sans-serif;
 }
 .introductionQuistos{
     display: flex;
