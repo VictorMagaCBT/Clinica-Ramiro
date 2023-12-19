@@ -76,7 +76,7 @@
     .rowCards img{
         width: 100%;
         object-fit: cover;
-        height: 100%;
+        height: 100% !important;
     }
 }
 /*.carousel-item{
