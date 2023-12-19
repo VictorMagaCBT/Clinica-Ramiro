@@ -2,10 +2,14 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
+from flask_mail import Message, Mail
 from api.models import db, User
 from sqlalchemy import not_ 
 from api.utils import generate_sitemap, APIException
 from api.data import populate_user
+
+
+mail= Mail()
 
 api = Blueprint('api', __name__)
 
@@ -56,7 +60,19 @@ def create_user():
    db.session.add(new_user)   
    db.session.commit()
 
+   send_email_notification(new_user)
+
    return jsonify({"msg": "user has been added"}), 200
+
+def send_email_notification(user):
+    msg = Message('Novo usuário criado',
+                  recipients=['victor_miguel@msn.com'])
+    msg.body = f'Um novo usuário foi criado:\n\nNome: {user.name}\nEmail: {user.email}\nObjeto: {user.object}\nMensagem: {user.message}'
+    try:
+        mail.send(msg)
+        print('E-mail de notificação enviado com sucesso!')
+    except Exception as e:
+        print(f'Erro ao enviar e-mail de notificação: {str(e)}')
 
 @api.route('/users',methods=['GET'])
 def get_all_users():
@@ -68,3 +84,4 @@ def get_all_users():
 def get_single_user(id):
     user = User.query.get(id)
     return jsonify(user.serialize()), 200
+

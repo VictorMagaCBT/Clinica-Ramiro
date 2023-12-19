@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import "../../styles/contactos.css";
 
+
 const Contactos = () => {
 
     const [name, setName] = useState('');
@@ -57,6 +58,7 @@ const Contactos = () => {
         })
         }
     }
+
     return (
             <div class="box-formulario">        
             

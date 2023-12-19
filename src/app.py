@@ -11,6 +11,8 @@ from api.models import db
 from api.routes import api
 from api.admin import setup_admin
 from api.commands import setup_commands
+from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail
 
 #from models import Person
 
@@ -30,6 +32,16 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 MIGRATE = Migrate(app, db, compare_type = True)
 db.init_app(app)
 
+app.config['MAIL_SERVER'] = 'outlook.office365.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_USERNAME'] = 'victor_miguel@msn.com'
+app.config['MAIL_PASSWORD'] = '!!Pamela69??'
+app.config['MAIL_DEFAULT_SENDER'] = 'victor_miguel@msn.com'
+
+mail= Mail(app) 
+mail.init_app(app)
 # Allow CORS requests to this API
 CORS(app)
 
