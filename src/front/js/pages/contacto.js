@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
+import emailjs from 'emailjs-com';
 import { useTranslation } from "react-i18next";
 
 import "../../styles/contactos.css";
@@ -18,11 +19,7 @@ const Contactos = () => {
     const navigate = useNavigate();
     const {t} = useTranslation();
 
-    const handleSubmit = () => {
-        create_user();
-        navigate("/")
-        console.log(name, email, object, message);
-    }
+    
     const create_user = () =>{
 
         if(name === '') {
@@ -42,7 +39,7 @@ const Contactos = () => {
             headers: { 
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ name, email, object, message }) 
+            body: JSON.stringify({ name, email, object, message, country, phone_number, date}) 
         })
         .then((res) => res.json())
             Swal.fire({
@@ -58,6 +55,46 @@ const Contactos = () => {
         })
         }
     }
+    const handleSubmit = async () => {
+        if (!name || !email || !object || !message) {
+            alert('Por favor, preencha todos os campos obrigatórios.');
+        } else {
+            try {
+                create_user(); 
+                console.log ("user criado")// Espera a criação do usuário no backend
+                emailSend(); // Envio do e-mail após a criação do usuário
+                console.log ("email enviado")
+                Swal.fire({
+                    title: 'Boa!',
+                    text: 'O seu pedido de informações foi enviado com sucesso!',
+                    icon: 'info'
+                });
+                navigate("/"); // Navegação para a página inicial após o envio do e-mail
+            } catch (error) {
+                console.error('Erro ao enviar o pedido:', error);
+            }
+        }
+        console.log(name, email, object, message);
+    }
+
+    const emailSend = async() => {
+        const emailData = {
+            from_name: name,
+            message: message,
+            country: country,
+            date: date,
+            phone_number: phone_number,
+            email: email,
+        };
+      
+        try {
+            const response = await emailjs.send('service_t5uv50u', 'template_2k2almr', emailData, 'AQ-Xn8iGM5XTMOyr6');
+            console.log('E-mail enviado com sucesso:', response);
+        } catch (error) {
+            console.error('Erro ao enviar e-mail:', error);
+            throw error; // Rejeita a promessa para indicar erro
+        }
+    };
 
     return (
             <div class="box-formulario">        
@@ -67,7 +104,7 @@ const Contactos = () => {
                     <div class="title-form">
                     <h1><i class="fa-regular fa-comments"></i>{t("FaleConnoscoAgora")}</h1>
                     </div>
-                    <form action="#" method="post" id="complete-form">
+                    <form action="#" method="post" id="complete-form" onSubmit={handleSubmit}>
                         <div class="row-form">
                             <div class="left-part">
                                 <span>
@@ -177,7 +214,7 @@ const Contactos = () => {
                             <button 
                                 type="submit" 
                                 class="btn-envia zoom-shadow"
-                                onClick={handleSubmit}
+                                
                                 >
                                 <i class="fa-regular fa-paper-plane"> {t("Enviar")}</i>
                             </button>

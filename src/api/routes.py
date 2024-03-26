@@ -19,6 +19,7 @@ api = Blueprint('api', __name__)
 def create_user():
 
    data = request.get_json()
+   print("Data received:", data)
 
    if data is None:
        response_body = {
@@ -50,24 +51,31 @@ def create_user():
        }
         return jsonify(response_body),400
    
+   elif "phone_number" not in data:
+        response_body = {
+           "msg": "Phone number doesnt exist in the request"
+       }
+        return jsonify(response_body),400
+   
    elif "message" not in data:
         response_body = {
            "msg": "Message doesnt exist in the request"
        }
         return jsonify(response_body),400
    
-   new_user= User(name = data["name"], email = data["email"], phone_number=data["phone number"], country= data["country"], object= data["object"], message=data["message"], date=data["date"])
+   new_user= User(name = data["name"], email = data["email"], phone_number=data["phone_number"], country= data["country"], object= data["object"], message=data["message"], date=data["date"])
    db.session.add(new_user)   
    db.session.commit()
 
    send_email_notification(new_user)
+   print(new_user)
 
    return jsonify({"msg": "user has been added"}), 200
 
 def send_email_notification(user):
     msg = Message('Novo usuário criado',
                   recipients=['victor_miguel@msn.com'])
-    msg.body = f'Um novo usuário foi criado:\n\nNome: {user.name}\nEmail: {user.email}\nObjeto: {user.object}\nMensagem: {user.message}'
+    msg.body = f'Um novo usuário foi criado:\n\nNome: {user.name}\nEmail: {user.email}\nObject: {user.object}\nMensagem: {user.message}'
     try:
         mail.send(msg)
         print('E-mail de notificação enviado com sucesso!')
