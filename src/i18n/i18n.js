@@ -11,7 +11,7 @@ i18n.use(initReactI18next).init({
         fr: frJson,
         en: enJson
     },
-    fallbackLng: "pt",
+    fallbackLng: "pt", //tal vez seja aqui que resolvo o problema de voltar ao pt ao voltar ao home
 
     interpolation: {
         escapeValue: false
