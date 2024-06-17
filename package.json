@@ -75,6 +75,7 @@
 	"dependencies": {
 		"@emailjs/browser": "^4.3.3",
 		"bootstrap": "^5.3.2",
+		"core-js": "^3.37.1",
 		"emailjs-com": "^3.2.0",
 		"google-translate-api": "^2.3.0",
 		"i18next": "^23.7.6",

@@ -119,7 +119,7 @@ const Home = () => {
 			<div className="lineDivider"></div>
 
 			<div className="row-tourismHome">
-				<img src="https://i.ibb.co/7kYbHMs/medical-tourism.jpg" alt="medical-tourism" border="0"/>
+				<img src="https://i.ibb.co/4T5sC5C/imagem-turismo-saude-min.jpg" alt="medical-tourism" border="0"/>
 				<div className="tourism-content">
 					<h1>{t("TurismoDaSaude")}</h1>
 					<div className="tourismTextHome text-center mt-3">
