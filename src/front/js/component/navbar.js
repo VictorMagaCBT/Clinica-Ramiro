@@ -38,7 +38,8 @@ export const Navbar = () => {
 					id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="navbarLinks">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="/">{t("Home")}</a>
+							<button type="button" class="buttonHome" onClick={() => navigate ("/")}>{t("Home")}</button>
+							{/*<a class="nav-link" aria-current="page" href="/">{t("Home")}</a>*/}
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#" onClick={() => { handleNavLinkClick(); navigate("/clinica"); }}>{t("Clinica")}</a>

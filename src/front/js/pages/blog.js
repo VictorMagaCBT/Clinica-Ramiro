@@ -30,7 +30,7 @@ const Blog = () => {
                                         rel="noopener noreferrer" 
                                         className="buling-link text-center"
                                     >
-                                        {t("LeiaMais")}
+                                     {t("LeiaMais")}
                                     </a>
                             </div>
                         </div>
