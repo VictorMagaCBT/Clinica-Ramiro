@@ -3,8 +3,9 @@ This module takes care of starting the API Server, Loading the DB and Adding the
 """
 import os
 from flask import Flask, request, jsonify, url_for, send_from_directory
+from flask import Flask, request, jsonify, url_for, send_from_directory
+from flask import Flask, request, jsonify, url_for, send_from_directory
 from flask_migrate import Migrate
-from flask_swagger import swagger
 from flask_cors import CORS
 from api.utils import APIException, generate_sitemap
 from api.models import db
@@ -13,6 +14,7 @@ from api.admin import setup_admin
 from api.commands import setup_commands
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
+from flask_migrate import Migrate
 
 #from models import Person
 
@@ -33,8 +35,7 @@ MIGRATE = Migrate(app, db, compare_type = True)
 db.init_app(app)
 
 # Allow CORS requests to this API
-CORS(app, resources={r"/api/*": {"origins": "https://potential-space-umbrella-pvx6547vv6rcxrr-3000.preview.app.github.dev"}})
-
+CORS(app)
 # add the admin
 setup_admin(app)
 

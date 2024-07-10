@@ -19,43 +19,8 @@ const Contactos = () => {
     const navigate = useNavigate();
     const {t} = useTranslation();
 
-    
-    const create_user = () =>{
-
-        if(name === '') {
-            alert(' Name is Empty!')
-        } else if(email === ''){
-            alert('Email is empty!')
-        } else if ( object === " "){
-            alert("Object is empty")
-        } else if(country === ''){
-            alert('Country is empty!')
-        } else if ( message === " "){
-            alert("Message is empty")
-        }
-        else {
-            fetch(process.env.BACKEND_URL + `api/create-user`, { 
-            method: "POST", 
-            headers: { 
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ name, email, object, message, country, phone_number, date}) 
-        })
-        .then((res) => res.json())
-            Swal.fire({
-                title: 'Boa!',
-                text: 'O seu pedido de informações foi enviado com sucesso!',
-                icon: 'info'
-            })
-        .then((result) => {            
-                console.log(result);
-        })
-        .catch((err) => {
-        console.log(err);
-        })
-        }
-    }
     const handleSubmit = async () => {
+
         if (!name || !email || !object || !message) {
             alert('Por favor, preencha todos os campos obrigatórios.');
         } else {
@@ -77,9 +42,34 @@ const Contactos = () => {
         console.log(name, email, object, message);
     }
 
+    const create_user = () =>{
+        
+        fetch(process.env.BACKEND_URL + `api/create-user`, { 
+            method: "POST", 
+            headers: { 
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, object, message, country, phone_number, date}) 
+        })
+        .then((res) => res.json())
+            Swal.fire({
+                title: 'Boa!',
+                text: 'O seu pedido de informações foi enviado com sucesso!',
+                icon: 'info'
+            })
+        .then((result) => {            
+                console.log(result);
+        })
+        .catch((err) => {
+        console.log(err);
+        })
+        
+    }
+
     const emailSend = async() => {
         const emailData = {
             from_name: name,
+            object: object,
             message: message,
             country: country,
             date: date,
