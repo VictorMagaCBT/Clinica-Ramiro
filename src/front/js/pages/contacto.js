@@ -16,16 +16,8 @@ const Contactos = () => {
     const [date, setDate] = useState('');
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
-    //const [isSubmitted, setIsSubmitted] = useState(false);
     const navigate = useNavigate();
     const {t} = useTranslation();
-
-    /*useEffect(() => {
-        if (isSubmitted) {
-            navigate("/"); // Redireciona para a homepage após a submissão
-        }
-    }, [isSubmitted, navigate]);*/
-
 
     const handleSubmit = async (event) => {
 
