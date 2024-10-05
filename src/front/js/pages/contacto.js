@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
@@ -16,8 +16,15 @@ const Contactos = () => {
     const [date, setDate] = useState('');
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
+    const [isSubmitted, setIsSubmitted] = useState(false);
     const navigate = useNavigate();
     const {t} = useTranslation();
+
+    useEffect(() => {
+        if (isSubmitted) {
+            navigate("/"); // Redireciona para a homepage após a submissão
+        }
+    }, [isSubmitted, navigate]);
 
     const handleSubmit = async () => {
 
@@ -25,16 +32,16 @@ const Contactos = () => {
             alert('Por favor, preencha todos os campos obrigatórios.');
         } else {
             try {
-                create_user(); 
+                await create_user(); 
                 console.log ("user criado")// Espera a criação do usuário no backend
-                emailSend(); // Envio do e-mail após a criação do usuário
+                await emailSend(); // Envio do e-mail após a criação do usuário
                 console.log ("email enviado")
                 Swal.fire({
                     title: 'Boa!',
                     text: 'O seu pedido de informações foi enviado com sucesso!',
                     icon: 'info'
                 });
-                navigate("/"); // Navegação para a página inicial após o envio do e-mail
+                setIsSubmitted(true); // Navegação para a página inicial após o envio do e-mail
             } catch (error) {
                 console.error('Erro ao enviar o pedido:', error);
             }
@@ -42,29 +49,28 @@ const Contactos = () => {
         console.log(name, email, object, message);
     }
 
-    const create_user = () =>{
-        
-        fetch(process.env.BACKEND_URL + `api/create-user`, { 
-            method: "POST", 
-            headers: { 
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ name, email, object, message, country, phone_number, date}) 
-        })
-        .then((res) => res.json())
-            Swal.fire({
-                title: 'Boa!',
-                text: 'O seu pedido de informações foi enviado com sucesso!',
-                icon: 'info'
-            })
-        .then((result) => {            
+    const create_user = async () =>{
+        try {       
+             const response = await fetch(process.env.BACKEND_URL + `api/create-user`, { 
+                    method: "POST", 
+                    headers: { 
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name, email, object, message, country, phone_number, date}) 
+                })
+                const result = await response.json();
                 console.log(result);
-        })
-        .catch((err) => {
-        console.log(err);
-        })
         
-    }
+                Swal.fire({
+                    title: 'Boa!',
+                    text: 'O seu pedido de informações foi enviado com sucesso!',
+                    icon: 'info'
+                });
+        
+            } catch (err) {
+                console.error('Erro ao criar usuário:', err);
+            }
+        }
 
     const emailSend = async() => {
         const emailData = {
