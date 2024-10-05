@@ -16,17 +16,20 @@ const Contactos = () => {
     const [date, setDate] = useState('');
     const [object, setObject] = useState('');
     const [message, setMessage] = useState('');
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    //const [isSubmitted, setIsSubmitted] = useState(false);
     const navigate = useNavigate();
     const {t} = useTranslation();
 
-    useEffect(() => {
+    /*useEffect(() => {
         if (isSubmitted) {
             navigate("/"); // Redireciona para a homepage após a submissão
         }
-    }, [isSubmitted, navigate]);
+    }, [isSubmitted, navigate]);*/
 
-    const handleSubmit = async () => {
+
+    const handleSubmit = async (event) => {
+
+        event.preventDefault();
 
         if (!name || !email || !object || !message) {
             alert('Por favor, preencha todos os campos obrigatórios.');
@@ -41,7 +44,8 @@ const Contactos = () => {
                     text: 'O seu pedido de informações foi enviado com sucesso!',
                     icon: 'info'
                 });
-                setIsSubmitted(true); // Navegação para a página inicial após o envio do e-mail
+                navigate("/");
+                //setIsSubmitted(); // Navegação para a página inicial após o envio do e-mail
             } catch (error) {
                 console.error('Erro ao enviar o pedido:', error);
             }
@@ -91,6 +95,8 @@ const Contactos = () => {
             throw error; // Rejeita a promessa para indicar erro
         }
     };
+
+   
 
     return (
             <div class="box-formulario">        
